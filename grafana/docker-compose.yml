@@ -1,0 +1,67 @@
+services:
+  playwright-server:
+    image: playwright-server:latest
+    container_name: playwright-server
+    healthcheck:
+      test: ["CMD-SHELL", "node -e \"const fs=require('fs');const f='/usr/src/app/grafana/textfile-collector/prometheus-metrics.prom'; try{const s=fs.statSync(f); process.exit((Date.now()-s.mtimeMs)<900000?0:1)}catch(e){process.exit(1)}\""]
+      interval: 60s
+      timeout: 10s
+      retries: 3
+      start_period: 2m
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - PROM_URL=http://prometheus:9090
+    depends_on:
+      - prometheus
+    volumes:
+      - ./textfile-collector:/usr/src/app/grafana/textfile-collector
+      - ../src/helpers:/usr/src/app/src/helpers
+      - ../src/auth:/usr/src/auth
+      - ../har-archive:/usr/src/app/har-archive
+      - ../src/tests:/usr/src/app/src/tests
+      - ../test-results:/usr/src/app/src/tests/test-results
+      - ../src/metrics:/usr/src/app/src/metrics
+      - ../reports:/usr/src/app/reports
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.retention.time=180d'
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    ports:
+      - "9090:9090"
+    depends_on:
+      - node-exporter
+
+  node-exporter:
+    image: quay.io/prometheus/node-exporter:latest
+    container_name: node-exporter
+    command:
+      - '--collector.textfile.directory=/textfile-collector'
+    volumes:
+      - ./textfile-collector:/textfile-collector
+    ports:
+      - "9100:9100"
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3001:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - ./grafana/provisioning:/etc/grafana/provisioning
+      - ./grafana/dashboards:/var/lib/grafana/dashboards
+      - grafana-data:/var/lib/grafana
+      
+volumes:
+  prometheus_data:
+  grafana-data:
+  

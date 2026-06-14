@@ -1,0 +1,82 @@
+{
+  "annotations": {"list": [{"builtIn": 1, "datasource": {"type": "grafana", "uid": "-- Grafana --"}, "enable": true, "hide": true, "iconColor": "rgba(0, 211, 255, 1)", "name": "Annotations & Alerts", "type": "dashboard"}]},
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 1,
+  "id": null,
+  "links": [],
+  "panels": [
+    {
+      "datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"},
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "continuous-GrYlRd"},
+          "mappings": [],
+          "unit": "ms"
+        }
+      },
+      "gridPos": {"h": 14, "w": 24, "x": 0, "y": 0},
+      "id": 27,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "horizontal",
+        "reduceOptions": {"calcs": ["lastNotNull"], "fields": "", "values": false},
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "targets": [
+        {"datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"}, "editorMode": "code", "expr": "(avg(avg_over_time((playwright_selector_latency_ms != -1)[7d:5m] offset 2d)) + avg(avg_over_time((playwright_latency != -1)[7d:5m] offset 2d))) / 2", "instant": true, "legendFormat": "KW 10: 02.03. - 08.03.2026", "range": false, "refId": "A"},
+        {"datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"}, "editorMode": "code", "expr": "(avg(avg_over_time((playwright_selector_latency_ms != -1)[7d:5m] offset 9d)) + avg(avg_over_time((playwright_latency != -1)[7d:5m] offset 9d))) / 2", "instant": true, "legendFormat": "KW 9: 23.02. - 01.03.2026", "range": false, "refId": "B"},
+        {"datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"}, "editorMode": "code", "expr": "(avg(avg_over_time((playwright_selector_latency_ms != -1)[7d:5m] offset 16d)) + avg(avg_over_time((playwright_latency != -1)[7d:5m] offset 16d))) / 2", "instant": true, "legendFormat": "KW 8: 16.02. - 22.02.2026", "range": false, "refId": "C"},
+        {"datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"}, "editorMode": "code", "expr": "(avg(avg_over_time((playwright_selector_latency_ms != -1)[7d:5m] offset 23d)) + avg(avg_over_time((playwright_latency != -1)[7d:5m] offset 23d))) / 2", "instant": true, "legendFormat": "KW 7: 09.02. - 15.02.2026", "range": false, "refId": "D"},
+        {"datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"}, "editorMode": "code", "expr": "(avg(avg_over_time((playwright_selector_latency_ms != -1)[7d:5m] offset 30d)) + avg(avg_over_time((playwright_latency != -1)[7d:5m] offset 30d))) / 2", "instant": true, "legendFormat": "KW 6: 02.02. - 08.02.2026", "range": false, "refId": "E"},
+        {"datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"}, "editorMode": "code", "expr": "(avg(avg_over_time((playwright_selector_latency_ms != -1)[7d:5m] offset 37d)) + avg(avg_over_time((playwright_latency != -1)[7d:5m] offset 37d))) / 2", "instant": true, "legendFormat": "KW 5: 26.01. - 01.02.2026", "range": false, "refId": "F"}
+      ],
+      "title": "Wöchentliche Latenz-Übersicht-whole week",
+      "type": "stat"
+    },
+    {
+      "datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"},
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "continuous-GrYlRd"},
+          "mappings": [],
+          "unit": "ms"
+        }
+      },
+      "gridPos": {"h": 14, "w": 24, "x": 0, "y": 14},
+      "id": 28,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "horizontal",
+        "reduceOptions": {"calcs": ["lastNotNull"], "fields": "", "values": false},
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "targets": [
+        {"datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"}, "editorMode": "code", "expr": "(avg(avg_over_time((playwright_selector_latency_ms != -1)[5d:5m] offset 2d)) + avg(avg_over_time((playwright_latency != -1)[5d:5m] offset 2d))) / 2", "instant": true, "legendFormat": "KW 10: 02.03. - 08.03.2026", "range": false, "refId": "A"},
+        {"datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"}, "editorMode": "code", "expr": "(avg(avg_over_time((playwright_selector_latency_ms != -1)[5d:5m] offset 9d)) + avg(avg_over_time((playwright_latency != -1)[5d:5m] offset 9d))) / 2", "instant": true, "legendFormat": "KW 9: 23.02. - 01.03.2026", "range": false, "refId": "B"},
+        {"datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"}, "editorMode": "code", "expr": "(avg(avg_over_time((playwright_selector_latency_ms != -1)[5d:5m] offset 16d)) + avg(avg_over_time((playwright_latency != -1)[5d:5m] offset 16d))) / 2", "instant": true, "legendFormat": "KW 8: 16.02. - 22.02.2026", "range": false, "refId": "C"},
+        {"datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"}, "editorMode": "code", "expr": "(avg(avg_over_time((playwright_selector_latency_ms != -1)[5d:5m] offset 23d)) + avg(avg_over_time((playwright_latency != -1)[5d:5m] offset 23d))) / 2", "instant": true, "legendFormat": "KW 7: 09.02. - 15.02.2026", "range": false, "refId": "D"},
+        {"datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"}, "editorMode": "code", "expr": "(avg(avg_over_time((playwright_selector_latency_ms != -1)[5d:5m] offset 30d)) + avg(avg_over_time((playwright_latency != -1)[5d:5m] offset 30d))) / 2", "instant": true, "legendFormat": "KW 6: 02.02. - 08.02.2026", "range": false, "refId": "E"},
+        {"datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"}, "editorMode": "code", "expr": "(avg(avg_over_time((playwright_selector_latency_ms != -1)[5d:5m] offset 37d)) + avg(avg_over_time((playwright_latency != -1)[5d:5m] offset 37d))) / 2", "instant": true, "legendFormat": "KW 5: 26.01. - 01.02.2026", "range": false, "refId": "F"}
+      ],
+      "title": "Wöchentliche Latenz-Übersicht-working days",
+      "type": "stat"
+    }
+  ],
+  "refresh": "1m",
+  "schemaVersion": 42,
+  "tags": ["trends", "latenz", "sruv"],
+  "templating": {"list": []},
+  "time": {"from": "now-7d", "to": "now"},
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "SRUV KW Übersicht",
+  "uid": "sruv-trends-uuid",
+  "version": 2
+}

@@ -1,0 +1,488 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {"type": "grafana", "uid": "-- Grafana --"},
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 1,
+  "id": null,
+  "links": [],
+  "panels": [
+    {
+      "collapsed": false,
+      "gridPos": {"h": 1, "w": 24, "x": 0, "y": 0},
+      "id": 1,
+      "title": "🏆 Browser-Ranking – Ø Latenz über alle Tests (niedrig = besser)",
+      "type": "row"
+    },
+    {
+      "datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"},
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "fixed", "fixedColor": "gold"},
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {"color": "green", "value": null},
+              {"color": "yellow", "value": 2000},
+              {"color": "red", "value": 5000}
+            ]
+          },
+          "unit": "ms",
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "gridPos": {"h": 6, "w": 8, "x": 0, "y": 1},
+      "id": 2,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": ["mean"],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "targets": [
+        {
+          "editorMode": "code",
+          "expr": "bottomk(1, avg by (browser) ((playwright_selector_latency_ms != -1) or (playwright_latency != -1)))",
+          "instant": true,
+          "legendFormat": "🥇  {{browser}}",
+          "range": false,
+          "refId": "A"
+        }
+      ],
+      "title": "Platz 1",
+      "type": "stat"
+    },
+    {
+      "datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"},
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "fixed", "fixedColor": "silver"},
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {"color": "green", "value": null},
+              {"color": "yellow", "value": 2000},
+              {"color": "red", "value": 5000}
+            ]
+          },
+          "unit": "ms",
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "gridPos": {"h": 6, "w": 8, "x": 8, "y": 1},
+      "id": 3,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": ["mean"],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "targets": [
+        {
+          "editorMode": "code",
+          "expr": "bottomk(2, avg by (browser) ((playwright_selector_latency_ms != -1) or (playwright_latency != -1))) unless on(browser) bottomk(1, avg by (browser) ((playwright_selector_latency_ms != -1) or (playwright_latency != -1)))",
+          "instant": true,
+          "legendFormat": "🥈  {{browser}}",
+          "range": false,
+          "refId": "A"
+        }
+      ],
+      "title": "Platz 2",
+      "type": "stat"
+    },
+    {
+      "datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"},
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "fixed", "fixedColor": "brown"},
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {"color": "green", "value": null},
+              {"color": "yellow", "value": 2000},
+              {"color": "red", "value": 5000}
+            ]
+          },
+          "unit": "ms",
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "gridPos": {"h": 6, "w": 8, "x": 16, "y": 1},
+      "id": 4,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": ["mean"],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "targets": [
+        {
+          "editorMode": "code",
+          "expr": "bottomk(3, avg by (browser) ((playwright_selector_latency_ms != -1) or (playwright_latency != -1))) unless on(browser) bottomk(2, avg by (browser) ((playwright_selector_latency_ms != -1) or (playwright_latency != -1)))",
+          "instant": true,
+          "legendFormat": "🥉  {{browser}}",
+          "range": false,
+          "refId": "A"
+        }
+      ],
+      "title": "Platz 3",
+      "type": "stat"
+    },
+    {
+      "collapsed": false,
+      "gridPos": {"h": 1, "w": 24, "x": 0, "y": 7},
+      "id": 10,
+      "title": "📊 Detailansicht nach Browser & Test",
+      "type": "row"
+    },
+    {
+      "datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"},
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "palette-classic"},
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "Ø Latenz (ms)",
+            "axisPlacement": "auto",
+            "fillOpacity": 80,
+            "gradientMode": "none",
+            "hideFrom": {"legend": false, "tooltip": false, "viz": false},
+            "lineWidth": 1,
+            "scaleDistribution": {"type": "linear"},
+            "thresholdsStyle": {"mode": "off"}
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {"color": "green", "value": null},
+              {"color": "yellow", "value": 2000},
+              {"color": "red", "value": 5000}
+            ]
+          },
+          "unit": "ms"
+        },
+        "overrides": []
+      },
+      "gridPos": {"h": 10, "w": 12, "x": 0, "y": 8},
+      "id": 5,
+      "options": {
+        "barRadius": 0.1,
+        "barWidth": 0.7,
+        "fullHighlight": false,
+        "groupWidth": 0.7,
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "orientation": "horizontal",
+        "showValue": "always",
+        "stacking": "none",
+        "tooltip": {"mode": "single", "sort": "asc"},
+        "xTickLabelRotation": 0,
+        "xTickLabelSpacing": 100
+      },
+      "targets": [
+        {
+          "editorMode": "code",
+          "expr": "sort(avg by (browser) ((playwright_selector_latency_ms != -1) or (playwright_latency != -1)))",
+          "instant": true,
+          "legendFormat": "{{browser}}",
+          "range": false,
+          "refId": "A"
+        }
+      ],
+      "title": "Ø Latenz pro Browser (alle Tests, sortiert)",
+      "type": "barchart"
+    },
+    {
+      "datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"},
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "palette-classic"},
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "Ø Latenz (ms)",
+            "axisPlacement": "auto",
+            "fillOpacity": 80,
+            "gradientMode": "none",
+            "hideFrom": {"legend": false, "tooltip": false, "viz": false},
+            "lineWidth": 1,
+            "scaleDistribution": {"type": "linear"},
+            "thresholdsStyle": {"mode": "off"}
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {"color": "green", "value": null},
+              {"color": "yellow", "value": 2000},
+              {"color": "red", "value": 5000}
+            ]
+          },
+          "unit": "ms"
+        },
+        "overrides": []
+      },
+      "gridPos": {"h": 10, "w": 12, "x": 12, "y": 8},
+      "id": 6,
+      "options": {
+        "barRadius": 0.1,
+        "barWidth": 0.6,
+        "fullHighlight": false,
+        "groupWidth": 0.7,
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "orientation": "horizontal",
+        "showValue": "always",
+        "stacking": "none",
+        "tooltip": {"mode": "multi", "sort": "asc"},
+        "xTickLabelRotation": 0,
+        "xTickLabelSpacing": 100
+      },
+      "targets": [
+        {
+          "editorMode": "code",
+          "expr": "sort(avg by (browser, test) ((playwright_selector_latency_ms != -1) or (playwright_latency != -1)))",
+          "instant": true,
+          "legendFormat": "{{browser}} – {{test}}",
+          "range": false,
+          "refId": "A"
+        }
+      ],
+      "title": "Ø Latenz pro Browser & Test",
+      "type": "barchart"
+    },
+    {
+      "datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"},
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "thresholds"},
+          "custom": {
+            "align": "auto",
+            "cellOptions": {"type": "color-background"},
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {"color": "green", "value": null},
+              {"color": "yellow", "value": 2000},
+              {"color": "red", "value": 5000}
+            ]
+          },
+          "unit": "ms"
+        },
+        "overrides": [
+          {
+            "matcher": {"id": "byName", "options": "browser"},
+            "properties": [
+              {"id": "displayName", "value": "Browser"},
+              {"id": "custom.width", "value": 180},
+              {"id": "custom.cellOptions", "value": {"type": "auto"}},
+              {"id": "color", "value": {"mode": "fixed", "fixedColor": "text"}}
+            ]
+          },
+          {
+            "matcher": {"id": "byRegexp", "options": "^Value( #A)?$"},
+            "properties": [
+              {"id": "displayName", "value": "Ø Latenz (ms)"},
+              {"id": "custom.width", "value": 200}
+            ]
+          },
+          {
+            "matcher": {"id": "byName", "options": "Value #B"},
+            "properties": [
+              {"id": "displayName", "value": "Summe Testlaeufe (Zeitraum)"},
+              {"id": "unit", "value": "none"},
+              {"id": "custom.width", "value": 140},
+              {"id": "custom.cellOptions", "value": {"type": "auto"}},
+              {"id": "color", "value": {"mode": "fixed", "fixedColor": "text"}}
+            ]
+          }
+        ]
+      },
+      "gridPos": {"h": 8, "w": 24, "x": 0, "y": 18},
+      "id": 7,
+      "options": {
+        "footer": {"countRows": false, "fields": "", "reducer": ["sum"], "show": false},
+        "showHeader": true,
+        "sortBy": [{"desc": false, "displayName": "Ø Latenz (ms)"}]
+      },
+      "targets": [
+        {
+          "editorMode": "code",
+          "expr": "sort(avg by (browser) ((playwright_selector_latency_ms != -1) or (playwright_latency != -1)))",
+          "format": "table",
+          "instant": true,
+          "legendFormat": "__auto",
+          "range": false,
+          "refId": "A"
+        },
+        {
+          "editorMode": "code",
+          "expr": "sum by (browser) (changes(playwright_last_run_timestamp[$__range]))",
+          "format": "table",
+          "instant": true,
+          "legendFormat": "__auto",
+          "range": false,
+          "refId": "B"
+        }
+      ],
+      "title": "Ranking-Tabelle: Browser nach Ø Latenz (aufsteigend = Platz 1 oben)",
+      "transformations": [
+        {
+          "id": "joinByField",
+          "options": {
+            "byField": "browser",
+            "mode": "outer"
+          }
+        },
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {"Time": true, "Time B": true},
+            "indexByName": {"browser": 0, "Value": 1, "Value #A": 1, "Value #B": 2},
+            "renameByName": {
+              "browser": "Browser",
+              "Value": "Ø Latenz (ms)",
+              "Value #A": "Ø Latenz (ms)",
+              "Value #B": "Summe Testlaeufe (Zeitraum)"
+            }
+          }
+        }
+      ],
+      "type": "table"
+    },
+    {
+      "collapsed": false,
+      "gridPos": {"h": 1, "w": 24, "x": 0, "y": 26},
+      "id": 11,
+      "title": "📈 Trend: Browser-Latenz über Zeit",
+      "type": "row"
+    },
+    {
+      "datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"},
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "palette-classic"},
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "Ø Latenz (ms)",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "barWidthFactor": 0.6,
+            "drawStyle": "line",
+            "fillOpacity": 10,
+            "gradientMode": "none",
+            "hideFrom": {"legend": false, "tooltip": false, "viz": false},
+            "insertNulls": false,
+            "lineInterpolation": "smooth",
+            "lineWidth": 2,
+            "pointSize": 5,
+            "scaleDistribution": {"type": "linear"},
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {"group": "A", "mode": "none"},
+            "thresholdsStyle": {"mode": "off"}
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {"color": "green", "value": null},
+              {"color": "yellow", "value": 2000},
+              {"color": "red", "value": 5000}
+            ]
+          },
+          "unit": "ms"
+        },
+        "overrides": []
+      },
+      "gridPos": {"h": 10, "w": 24, "x": 0, "y": 27},
+      "id": 8,
+      "options": {
+        "legend": {
+          "calcs": ["lastNotNull", "mean", "min"],
+          "displayMode": "table",
+          "placement": "right",
+          "showLegend": true
+        },
+        "tooltip": {"mode": "multi", "sort": "asc"}
+      },
+      "targets": [
+        {
+          "editorMode": "code",
+          "expr": "avg by (browser) ((playwright_selector_latency_ms != -1) or (playwright_latency != -1))",
+          "legendFormat": "{{browser}}",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "Ø Latenz pro Browser über Zeit",
+      "type": "timeseries"
+    }
+  ],
+  "refresh": "5m",
+  "schemaVersion": 42,
+  "tags": ["browser", "ranking", "latenz", "performance"],
+  "templating": {"list": []},
+  "time": {"from": "now-7d", "to": "now"},
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "Browser-Ranking",
+  "uid": "browser-ranking-uuid",
+  "version": 1
+}

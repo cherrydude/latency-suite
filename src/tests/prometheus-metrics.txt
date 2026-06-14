@@ -1,0 +1,25 @@
+Nutze Report: C:\Users\MartenKirschenhofer\Projekte\PlaywrightSoC_optimized\server\src\tests\test-results\playwright-report_2026-05-29_09-08-06.json
+playwright_latency{test="Datenbank: Alle Spalten Ansicht",browser="Google Chrome"} 30102
+playwright_selector_latency_ms{test="Datenbank: Alle Spalten Ansicht",browser="Google Chrome"} 29018
+playwright_latency{test="Datenbank: Alle Spalten Ansicht",browser="Microsoft Edge"} 19151
+playwright_selector_latency_ms{test="Datenbank: Alle Spalten Ansicht",browser="Microsoft Edge"} 18055
+playwright_latency{test="Datenbank: Sachverhalt Ansicht",browser="Google Chrome"} 18777
+playwright_selector_latency_ms{test="Datenbank: Sachverhalt Ansicht",browser="Google Chrome"} 17956
+playwright_latency{test="Datenbank: Sachverhalt Ansicht",browser="Microsoft Edge"} 20898
+playwright_selector_latency_ms{test="Datenbank: Sachverhalt Ansicht",browser="Microsoft Edge"} 20073
+playwright_latency{test="Datenbank: Telefonie Ansicht",browser="Google Chrome"} 16131
+playwright_selector_latency_ms{test="Datenbank: Telefonie Ansicht",browser="Google Chrome"} 15403
+playwright_latency{test="Datenbank: Telefonie Ansicht",browser="Microsoft Edge"} 15571
+playwright_selector_latency_ms{test="Datenbank: Telefonie Ansicht",browser="Microsoft Edge"} 14988
+playwright_latency{test="PerformanceTest: Alle Spalten Ansicht",browser="Google Chrome"} 15145
+playwright_selector_latency_ms{test="PerformanceTest: Alle Spalten Ansicht",browser="Google Chrome"} 14280
+playwright_latency{test="PerformanceTest: Alle Spalten Ansicht",browser="Microsoft Edge"} 13249
+playwright_selector_latency_ms{test="PerformanceTest: Alle Spalten Ansicht",browser="Microsoft Edge"} 12536
+playwright_latency{test="PerformanceTest: Sachverhalt Ansicht",browser="Google Chrome"} 12517
+playwright_selector_latency_ms{test="PerformanceTest: Sachverhalt Ansicht",browser="Google Chrome"} 11891
+playwright_latency{test="PerformanceTest: Sachverhalt Ansicht",browser="Microsoft Edge"} 10305
+playwright_selector_latency_ms{test="PerformanceTest: Sachverhalt Ansicht",browser="Microsoft Edge"} 9920
+playwright_latency{test="PerformanceTest: Telefonie Ansicht",browser="Google Chrome"} 7849
+playwright_selector_latency_ms{test="PerformanceTest: Telefonie Ansicht",browser="Google Chrome"} 7512
+playwright_latency{test="PerformanceTest: Telefonie Ansicht",browser="Microsoft Edge"} 7808
+playwright_selector_latency_ms{test="PerformanceTest: Telefonie Ansicht",browser="Microsoft Edge"} 7402

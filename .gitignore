@@ -1,0 +1,60 @@
+# Node modules (wichtig!)
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build output
+dist/
+build/
+out/
+
+# Runtime files
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage (Tests)
+coverage/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Cache
+.cache/
+.npm/
+
+# Parcel / Vite / Next / Nuxt etc.
+.cache-loader/
+.next/
+.nuxt/
+.output/
+.vercel/
+.svelte-kit/
+dist-ssr/
+
+# ESLint / Stylelint caches
+.eslintcache
+.stylelintcache
+
+# TypeScript
+*.tsbuildinfo
+
+# Optional npm lock files (meist NICHT ignorieren!)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml

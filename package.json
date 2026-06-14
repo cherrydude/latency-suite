@@ -1,0 +1,17 @@
+{
+  "name": "playwright-server",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node -e \"console.log('Server gestartet, warte auf Test-Beginn'); setInterval(() => {}, 1000);\"",
+    "report": "node reports/generate-report.js",
+    "avg:latency": "node reports/average-playwright-latency.js"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.57.0",
+    "dotenv": "^17.2.3",
+    "express": "^4.18.2",
+    "playwright": "^1.41.1",
+    "prom-client": "^14.1.0"
+  }
+}

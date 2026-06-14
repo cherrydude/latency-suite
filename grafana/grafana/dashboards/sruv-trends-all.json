@@ -1,0 +1,85 @@
+﻿{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {"type": "grafana", "uid": "-- Grafana --"},
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 1,
+  "id": null,
+  "links": [],
+  "panels": [
+    {
+      "datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"},
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "continuous-GrYlRd"},
+          "custom": {"align": "center", "cellOptions": {"type": "color-background"}, "inspect": false},
+          "mappings": [],
+          "thresholds": {"mode": "absolute", "steps": [{"color": "green", "value": null}, {"color": "yellow", "value": 2500}, {"color": "red", "value": 7000}]},
+          "unit": "ms"
+        },
+        "overrides": [
+          {"matcher": {"id": "byName", "options": "week"}, "properties": [{"id": "displayName", "value": "Kalenderwoche"}, {"id": "custom.align", "value": "left"}, {"id": "custom.width", "value": 340}, {"id": "custom.cellOptions", "value": {"type": "auto"}}, {"id": "color", "value": {"mode": "fixed", "fixedColor": "text"}}]},
+          {"matcher": {"id": "byName", "options": "Value #A"}, "properties": [{"id": "displayName", "value": "Mo"}, {"id": "custom.width", "value": 48}, {"id": "mappings", "value": [{"type": "range", "options": {"from": -1e+99, "to": 1e+99, "result": {"text": ""}}}]}]},
+          {"matcher": {"id": "byName", "options": "Value #B"}, "properties": [{"id": "displayName", "value": "Di"}, {"id": "custom.width", "value": 48}, {"id": "mappings", "value": [{"type": "range", "options": {"from": -1e+99, "to": 1e+99, "result": {"text": ""}}}]}]},
+          {"matcher": {"id": "byName", "options": "Value #C"}, "properties": [{"id": "displayName", "value": "Mi"}, {"id": "custom.width", "value": 48}, {"id": "mappings", "value": [{"type": "range", "options": {"from": -1e+99, "to": 1e+99, "result": {"text": ""}}}]}]},
+          {"matcher": {"id": "byName", "options": "Value #D"}, "properties": [{"id": "displayName", "value": "Do"}, {"id": "custom.width", "value": 48}, {"id": "mappings", "value": [{"type": "range", "options": {"from": -1e+99, "to": 1e+99, "result": {"text": ""}}}]}]},
+          {"matcher": {"id": "byName", "options": "Value #E"}, "properties": [{"id": "displayName", "value": "Fr"}, {"id": "custom.width", "value": 48}, {"id": "mappings", "value": [{"type": "range", "options": {"from": -1e+99, "to": 1e+99, "result": {"text": ""}}}]}]},
+          {"matcher": {"id": "byName", "options": "Value #F"}, "properties": [{"id": "displayName", "value": "Sa"}, {"id": "custom.width", "value": 48}, {"id": "mappings", "value": [{"type": "range", "options": {"from": -1e+99, "to": 1e+99, "result": {"text": ""}}}]}]},
+          {"matcher": {"id": "byName", "options": "Value #G"}, "properties": [{"id": "displayName", "value": "So"}, {"id": "custom.width", "value": 48}, {"id": "mappings", "value": [{"type": "range", "options": {"from": -1e+99, "to": 1e+99, "result": {"text": ""}}}]}]}
+        ]
+      },
+      "gridPos": {"h": 12, "w": 24, "x": 0, "y": 0},
+      "id": 33,
+      "options": {"footer": {"countRows": false, "fields": "", "reducer": ["sum"], "show": false}, "showHeader": true, "sortBy": [{"desc": true, "displayName": "Kalenderwoche"}]},
+      "targets": [
+        {"editorMode": "code", "expr": "label_replace(avg(((playwright_selector_latency_ms offset 7d) != -1) or ((playwright_latency offset 7d) != -1)), \"week\", \"KW 11\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 14d) != -1) or ((playwright_latency offset 14d) != -1)), \"week\", \"KW 10\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 21d) != -1) or ((playwright_latency offset 21d) != -1)), \"week\", \"KW 9\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 28d) != -1) or ((playwright_latency offset 28d) != -1)), \"week\", \"KW 8\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 35d) != -1) or ((playwright_latency offset 35d) != -1)), \"week\", \"KW 7\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 42d) != -1) or ((playwright_latency offset 42d) != -1)), \"week\", \"KW 6\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 49d) != -1) or ((playwright_latency offset 49d) != -1)), \"week\", \"KW 5\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 56d) != -1) or ((playwright_latency offset 56d) != -1)), \"week\", \"KW 4\", \"__name__\", \".*\")", "format": "table", "instant": true, "refId": "A"},
+        {"editorMode": "code", "expr": "label_replace(avg(((playwright_selector_latency_ms offset 6d) != -1) or ((playwright_latency offset 6d) != -1)), \"week\", \"KW 11\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 13d) != -1) or ((playwright_latency offset 13d) != -1)), \"week\", \"KW 10\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 20d) != -1) or ((playwright_latency offset 20d) != -1)), \"week\", \"KW 9\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 27d) != -1) or ((playwright_latency offset 27d) != -1)), \"week\", \"KW 8\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 34d) != -1) or ((playwright_latency offset 34d) != -1)), \"week\", \"KW 7\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 41d) != -1) or ((playwright_latency offset 41d) != -1)), \"week\", \"KW 6\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 48d) != -1) or ((playwright_latency offset 48d) != -1)), \"week\", \"KW 5\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 55d) != -1) or ((playwright_latency offset 55d) != -1)), \"week\", \"KW 4\", \"__name__\", \".*\")", "format": "table", "instant": true, "refId": "B"},
+        {"editorMode": "code", "expr": "label_replace(avg(((playwright_selector_latency_ms offset 5d) != -1) or ((playwright_latency offset 5d) != -1)), \"week\", \"KW 11\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 12d) != -1) or ((playwright_latency offset 12d) != -1)), \"week\", \"KW 10\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 19d) != -1) or ((playwright_latency offset 19d) != -1)), \"week\", \"KW 9\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 26d) != -1) or ((playwright_latency offset 26d) != -1)), \"week\", \"KW 8\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 33d) != -1) or ((playwright_latency offset 33d) != -1)), \"week\", \"KW 7\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 40d) != -1) or ((playwright_latency offset 40d) != -1)), \"week\", \"KW 6\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 47d) != -1) or ((playwright_latency offset 47d) != -1)), \"week\", \"KW 5\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 54d) != -1) or ((playwright_latency offset 54d) != -1)), \"week\", \"KW 4\", \"__name__\", \".*\")", "format": "table", "instant": true, "refId": "C"},
+        {"editorMode": "code", "expr": "label_replace(avg(((playwright_selector_latency_ms offset 4d) != -1) or ((playwright_latency offset 4d) != -1)), \"week\", \"KW 11\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 11d) != -1) or ((playwright_latency offset 11d) != -1)), \"week\", \"KW 10\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 18d) != -1) or ((playwright_latency offset 18d) != -1)), \"week\", \"KW 9\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 25d) != -1) or ((playwright_latency offset 25d) != -1)), \"week\", \"KW 8\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 32d) != -1) or ((playwright_latency offset 32d) != -1)), \"week\", \"KW 7\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 39d) != -1) or ((playwright_latency offset 39d) != -1)), \"week\", \"KW 6\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 46d) != -1) or ((playwright_latency offset 46d) != -1)), \"week\", \"KW 5\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 53d) != -1) or ((playwright_latency offset 53d) != -1)), \"week\", \"KW 4\", \"__name__\", \".*\")", "format": "table", "instant": true, "refId": "D"},
+        {"editorMode": "code", "expr": "label_replace(avg(((playwright_selector_latency_ms offset 3d) != -1) or ((playwright_latency offset 3d) != -1)), \"week\", \"KW 11\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 10d) != -1) or ((playwright_latency offset 10d) != -1)), \"week\", \"KW 10\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 17d) != -1) or ((playwright_latency offset 17d) != -1)), \"week\", \"KW 9\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 24d) != -1) or ((playwright_latency offset 24d) != -1)), \"week\", \"KW 8\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 31d) != -1) or ((playwright_latency offset 31d) != -1)), \"week\", \"KW 7\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 38d) != -1) or ((playwright_latency offset 38d) != -1)), \"week\", \"KW 6\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 45d) != -1) or ((playwright_latency offset 45d) != -1)), \"week\", \"KW 5\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 52d) != -1) or ((playwright_latency offset 52d) != -1)), \"week\", \"KW 4\", \"__name__\", \".*\")", "format": "table", "instant": true, "refId": "E"},
+        {"editorMode": "code", "expr": "label_replace(avg(((playwright_selector_latency_ms offset 2d) != -1) or ((playwright_latency offset 2d) != -1)), \"week\", \"KW 11\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 9d) != -1) or ((playwright_latency offset 9d) != -1)), \"week\", \"KW 10\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 16d) != -1) or ((playwright_latency offset 16d) != -1)), \"week\", \"KW 9\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 23d) != -1) or ((playwright_latency offset 23d) != -1)), \"week\", \"KW 8\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 30d) != -1) or ((playwright_latency offset 30d) != -1)), \"week\", \"KW 7\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 37d) != -1) or ((playwright_latency offset 37d) != -1)), \"week\", \"KW 6\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 44d) != -1) or ((playwright_latency offset 44d) != -1)), \"week\", \"KW 5\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 51d) != -1) or ((playwright_latency offset 51d) != -1)), \"week\", \"KW 4\", \"__name__\", \".*\")", "format": "table", "instant": true, "refId": "F"},
+        {"editorMode": "code", "expr": "label_replace(avg(((playwright_selector_latency_ms offset 1d) != -1) or ((playwright_latency offset 1d) != -1)), \"week\", \"KW 11\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 8d) != -1) or ((playwright_latency offset 8d) != -1)), \"week\", \"KW 10\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 15d) != -1) or ((playwright_latency offset 15d) != -1)), \"week\", \"KW 9\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 22d) != -1) or ((playwright_latency offset 22d) != -1)), \"week\", \"KW 8\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 29d) != -1) or ((playwright_latency offset 29d) != -1)), \"week\", \"KW 7\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 36d) != -1) or ((playwright_latency offset 36d) != -1)), \"week\", \"KW 6\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 43d) != -1) or ((playwright_latency offset 43d) != -1)), \"week\", \"KW 5\", \"__name__\", \".*\") or label_replace(avg(((playwright_selector_latency_ms offset 50d) != -1) or ((playwright_latency offset 50d) != -1)), \"week\", \"KW 4\", \"__name__\", \".*\")", "format": "table", "instant": true, "refId": "G"}
+      ],
+      "title": "KW HEATMAP LIVE (KW4-KW11)",
+      "transformations": [
+        {
+          "id": "joinByField",
+          "options": {
+            "byField": "week",
+            "mode": "outer"
+          }
+        },
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {"Time": true},
+            "indexByName": {"week": 0, "Value #A": 1, "Value #B": 2, "Value #C": 3, "Value #D": 4, "Value #E": 5, "Value #F": 6, "Value #G": 7},
+            "renameByName": {"week": "Kalenderwoche", "Value #A": "Mo", "Value #B": "Di", "Value #C": "Mi", "Value #D": "Do", "Value #E": "Fr", "Value #F": "Sa", "Value #G": "So"}
+          }
+        }
+      ],
+      "type": "table"
+    }
+  ],
+  "refresh": "1m",
+  "schemaVersion": 42,
+  "tags": ["trends", "latenz", "sruv"],
+  "templating": {"list": []},
+  "time": {"from": "now-7d", "to": "now"},
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "SRUV KW Übersicht",
+  "uid": "sruv-trends-uuid",
+  "version": 3
+}

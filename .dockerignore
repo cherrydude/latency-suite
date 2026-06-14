@@ -1,0 +1,17 @@
+node_modules
+npm-debug.log
+Dockerfile
+.dockerignore
+.git
+.gitignore
+grafana/
+tests/
+test/
+*.md
+*.log
+.vscode
+.env
+coverage/
+dist/
+client/
+package-lock.json

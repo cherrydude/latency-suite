@@ -1,0 +1,864 @@
+playwright_latency{test="Datenbank: Alle Spalten Ansicht",browser="Google Chrome"} 30102
+playwright_selector_latency_ms{test="Datenbank: Alle Spalten Ansicht",browser="Google Chrome"} 29018
+playwright_latency{test="Datenbank: Alle Spalten Ansicht",browser="Microsoft Edge"} 19151
+playwright_selector_latency_ms{test="Datenbank: Alle Spalten Ansicht",browser="Microsoft Edge"} 18055
+playwright_latency{test="Datenbank: Sachverhalt Ansicht",browser="Google Chrome"} 18777
+playwright_selector_latency_ms{test="Datenbank: Sachverhalt Ansicht",browser="Google Chrome"} 17956
+playwright_latency{test="Datenbank: Sachverhalt Ansicht",browser="Microsoft Edge"} 20898
+playwright_selector_latency_ms{test="Datenbank: Sachverhalt Ansicht",browser="Microsoft Edge"} 20073
+playwright_latency{test="Datenbank: Telefonie Ansicht",browser="Google Chrome"} 16131
+playwright_selector_latency_ms{test="Datenbank: Telefonie Ansicht",browser="Google Chrome"} 15403
+playwright_latency{test="Datenbank: Telefonie Ansicht",browser="Microsoft Edge"} 15571
+playwright_selector_latency_ms{test="Datenbank: Telefonie Ansicht",browser="Microsoft Edge"} 14988
+playwright_latency{test="PerformanceTest: Alle Spalten Ansicht",browser="Google Chrome"} 15145
+playwright_selector_latency_ms{test="PerformanceTest: Alle Spalten Ansicht",browser="Google Chrome"} 14280
+playwright_latency{test="PerformanceTest: Alle Spalten Ansicht",browser="Microsoft Edge"} 13249
+playwright_selector_latency_ms{test="PerformanceTest: Alle Spalten Ansicht",browser="Microsoft Edge"} 12536
+playwright_latency{test="PerformanceTest: Sachverhalt Ansicht",browser="Google Chrome"} 12517
+playwright_selector_latency_ms{test="PerformanceTest: Sachverhalt Ansicht",browser="Google Chrome"} 11891
+playwright_latency{test="PerformanceTest: Sachverhalt Ansicht",browser="Microsoft Edge"} 10305
+playwright_selector_latency_ms{test="PerformanceTest: Sachverhalt Ansicht",browser="Microsoft Edge"} 9920
+playwright_latency{test="PerformanceTest: Telefonie Ansicht",browser="Google Chrome"} 7849
+playwright_selector_latency_ms{test="PerformanceTest: Telefonie Ansicht",browser="Google Chrome"} 7512
+playwright_latency{test="PerformanceTest: Telefonie Ansicht",browser="Microsoft Edge"} 7808
+playwright_selector_latency_ms{test="PerformanceTest: Telefonie Ansicht",browser="Microsoft Edge"} 7402
+playwright_ttfb_ms{test="Telefonie Ansicht",browser="Google Chrome"} 310
+playwright_domcontentloaded_ms{test="Telefonie Ansicht",browser="Google Chrome"} 2411
+playwright_load_ms{test="Telefonie Ansicht",browser="Google Chrome"} 3620
+playwright_interactive_ms{test="Telefonie Ansicht",browser="Google Chrome"} 2407
+playwright_fcp_ms{test="Telefonie Ansicht",browser="Google Chrome"} 2204
+playwright_lcp_ms{test="Telefonie Ansicht",browser="Google Chrome"} 2252
+playwright_cls{test="Telefonie Ansicht",browser="Google Chrome"} 0.16993998809655508
+playwright_total_requests{test="Telefonie Ansicht",browser="Google Chrome"} 142
+playwright_total_transfer_bytes{test="Telefonie Ansicht",browser="Google Chrome"} 4508660
+playwright_total_encoded_bytes{test="Telefonie Ansicht",browser="Google Chrome"} 4466060
+playwright_console_errors{test="Telefonie Ansicht",browser="Google Chrome"} 0
+playwright_js_errors{test="Telefonie Ansicht",browser="Google Chrome"} 0
+playwright_failed_requests{test="Telefonie Ansicht",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Telefonie Ansicht",browser="Google Chrome"} 1776064298
+playwright_ttfb_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 138
+playwright_domcontentloaded_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 2066
+playwright_load_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 3181
+playwright_interactive_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 2062
+playwright_fcp_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 1860
+playwright_lcp_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 1960
+playwright_cls{test="Alle Spalten Ansicht",browser="Google Chrome"} 0.09994446543852488
+playwright_total_requests{test="Alle Spalten Ansicht",browser="Google Chrome"} 142
+playwright_total_transfer_bytes{test="Alle Spalten Ansicht",browser="Google Chrome"} 5015420
+playwright_total_encoded_bytes{test="Alle Spalten Ansicht",browser="Google Chrome"} 4972820
+playwright_console_errors{test="Alle Spalten Ansicht",browser="Google Chrome"} 0
+playwright_js_errors{test="Alle Spalten Ansicht",browser="Google Chrome"} 0
+playwright_failed_requests{test="Alle Spalten Ansicht",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Alle Spalten Ansicht",browser="Google Chrome"} 1776064343
+playwright_ttfb_ms{test="Telefonie Ansicht",browser="Google Chrome"} 157
+playwright_domcontentloaded_ms{test="Telefonie Ansicht",browser="Google Chrome"} 2075
+playwright_load_ms{test="Telefonie Ansicht",browser="Google Chrome"} 3291
+playwright_interactive_ms{test="Telefonie Ansicht",browser="Google Chrome"} 2072
+playwright_fcp_ms{test="Telefonie Ansicht",browser="Google Chrome"} 1964
+playwright_lcp_ms{test="Telefonie Ansicht",browser="Google Chrome"} 1996
+playwright_cls{test="Telefonie Ansicht",browser="Google Chrome"} 0.10090294134616852
+playwright_total_requests{test="Telefonie Ansicht",browser="Google Chrome"} 142
+playwright_total_transfer_bytes{test="Telefonie Ansicht",browser="Google Chrome"} 4508665
+playwright_total_encoded_bytes{test="Telefonie Ansicht",browser="Google Chrome"} 4466065
+playwright_console_errors{test="Telefonie Ansicht",browser="Google Chrome"} 0
+playwright_js_errors{test="Telefonie Ansicht",browser="Google Chrome"} 0
+playwright_failed_requests{test="Telefonie Ansicht",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Telefonie Ansicht",browser="Google Chrome"} 1776064396
+playwright_ttfb_ms{test="Falladmin Dashboard",browser="Google Chrome"} 150
+playwright_domcontentloaded_ms{test="Falladmin Dashboard",browser="Google Chrome"} 2008
+playwright_load_ms{test="Falladmin Dashboard",browser="Google Chrome"} 2103
+playwright_interactive_ms{test="Falladmin Dashboard",browser="Google Chrome"} 2005
+playwright_fcp_ms{test="Falladmin Dashboard",browser="Google Chrome"} 1828
+playwright_lcp_ms{test="Falladmin Dashboard",browser="Google Chrome"} 3880
+playwright_cls{test="Falladmin Dashboard",browser="Google Chrome"} 0.3561995082431369
+playwright_total_requests{test="Falladmin Dashboard",browser="Google Chrome"} 135
+playwright_total_transfer_bytes{test="Falladmin Dashboard",browser="Google Chrome"} 3827113
+playwright_total_encoded_bytes{test="Falladmin Dashboard",browser="Google Chrome"} 3883007
+playwright_console_errors{test="Falladmin Dashboard",browser="Google Chrome"} 0
+playwright_js_errors{test="Falladmin Dashboard",browser="Google Chrome"} 0
+playwright_failed_requests{test="Falladmin Dashboard",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Falladmin Dashboard",browser="Google Chrome"} 1776064406
+playwright_ttfb_ms{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 126
+playwright_domcontentloaded_ms{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 1981
+playwright_load_ms{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 2076
+playwright_interactive_ms{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 1977
+playwright_fcp_ms{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 1848
+playwright_lcp_ms{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 1948
+playwright_cls{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 0.16446797413296171
+playwright_total_requests{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 143
+playwright_total_transfer_bytes{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 3827580
+playwright_total_encoded_bytes{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 3928741
+playwright_console_errors{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 0
+playwright_js_errors{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 0
+playwright_failed_requests{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 1776064426
+playwright_ttfb_ms{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 131
+playwright_domcontentloaded_ms{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 2032
+playwright_load_ms{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 2050
+playwright_interactive_ms{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 2030
+playwright_fcp_ms{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 1880
+playwright_lcp_ms{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 3796
+playwright_cls{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 0.3561995082431369
+playwright_total_requests{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 135
+playwright_total_transfer_bytes{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 3827100
+playwright_total_encoded_bytes{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 3882988
+playwright_console_errors{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 0
+playwright_js_errors{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 0
+playwright_failed_requests{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 1776064438
+playwright_ttfb_ms{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 124
+playwright_domcontentloaded_ms{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 1990
+playwright_load_ms{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 2046
+playwright_interactive_ms{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 1987
+playwright_fcp_ms{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 1724
+playwright_lcp_ms{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 1908
+playwright_cls{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 0.21702755896250403
+playwright_total_requests{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 160
+playwright_total_transfer_bytes{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 2574796
+playwright_total_encoded_bytes{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 2708037
+playwright_console_errors{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 0
+playwright_js_errors{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 0
+playwright_failed_requests{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 1776064444
+playwright_ttfb_ms{test="Latenztest-SRUV-HP",browser="Google Chrome"} 25
+playwright_domcontentloaded_ms{test="Latenztest-SRUV-HP",browser="Google Chrome"} 761
+playwright_load_ms{test="Latenztest-SRUV-HP",browser="Google Chrome"} 1174
+playwright_interactive_ms{test="Latenztest-SRUV-HP",browser="Google Chrome"} 714
+playwright_fcp_ms{test="Latenztest-SRUV-HP",browser="Google Chrome"} 500
+playwright_lcp_ms{test="Latenztest-SRUV-HP",browser="Google Chrome"} 500
+playwright_cls{test="Latenztest-SRUV-HP",browser="Google Chrome"} 0.015360838731129964
+playwright_total_requests{test="Latenztest-SRUV-HP",browser="Google Chrome"} 89
+playwright_total_transfer_bytes{test="Latenztest-SRUV-HP",browser="Google Chrome"} 2563366
+playwright_total_encoded_bytes{test="Latenztest-SRUV-HP",browser="Google Chrome"} 2538166
+playwright_console_errors{test="Latenztest-SRUV-HP",browser="Google Chrome"} 0
+playwright_js_errors{test="Latenztest-SRUV-HP",browser="Google Chrome"} 0
+playwright_failed_requests{test="Latenztest-SRUV-HP",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Latenztest-SRUV-HP",browser="Google Chrome"} 1776064448
+playwright_ttfb_ms{test="Latenztest-E-Antrag",browser="Google Chrome"} 13
+playwright_domcontentloaded_ms{test="Latenztest-E-Antrag",browser="Google Chrome"} 596
+playwright_load_ms{test="Latenztest-E-Antrag",browser="Google Chrome"} 596
+playwright_interactive_ms{test="Latenztest-E-Antrag",browser="Google Chrome"} 69
+playwright_fcp_ms{test="Latenztest-E-Antrag",browser="Google Chrome"} 1436
+playwright_lcp_ms{test="Latenztest-E-Antrag",browser="Google Chrome"} 5376
+playwright_cls{test="Latenztest-E-Antrag",browser="Google Chrome"} 0.007411471366882325
+playwright_total_requests{test="Latenztest-E-Antrag",browser="Google Chrome"} 33
+playwright_total_transfer_bytes{test="Latenztest-E-Antrag",browser="Google Chrome"} 8421698
+playwright_total_encoded_bytes{test="Latenztest-E-Antrag",browser="Google Chrome"} 8413898
+playwright_console_errors{test="Latenztest-E-Antrag",browser="Google Chrome"} 2
+playwright_js_errors{test="Latenztest-E-Antrag",browser="Google Chrome"} 0
+playwright_failed_requests{test="Latenztest-E-Antrag",browser="Google Chrome"} 2
+playwright_last_run_timestamp{test="Latenztest-E-Antrag",browser="Google Chrome"} 1776064497
+playwright_ttfb_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 139
+playwright_domcontentloaded_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 2134
+playwright_load_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 3536
+playwright_interactive_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 2130
+playwright_fcp_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 1936
+playwright_lcp_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 2004
+playwright_cls{test="Alle Spalten Ansicht",browser="Google Chrome"} 0.09994446543852488
+playwright_total_requests{test="Alle Spalten Ansicht",browser="Google Chrome"} 142
+playwright_total_transfer_bytes{test="Alle Spalten Ansicht",browser="Google Chrome"} 5015154
+playwright_total_encoded_bytes{test="Alle Spalten Ansicht",browser="Google Chrome"} 4972554
+playwright_console_errors{test="Alle Spalten Ansicht",browser="Google Chrome"} 0
+playwright_js_errors{test="Alle Spalten Ansicht",browser="Google Chrome"} 0
+playwright_failed_requests{test="Alle Spalten Ansicht",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Alle Spalten Ansicht",browser="Google Chrome"} 1776066577
+playwright_ttfb_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 5616
+playwright_domcontentloaded_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 7582
+playwright_load_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 9070
+playwright_interactive_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 7574
+playwright_fcp_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 7336
+playwright_lcp_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 7488
+playwright_cls{test="Alle Spalten Ansicht",browser="Google Chrome"} 0.09976352347267999
+playwright_total_requests{test="Alle Spalten Ansicht",browser="Google Chrome"} 142
+playwright_total_transfer_bytes{test="Alle Spalten Ansicht",browser="Google Chrome"} 5015322
+playwright_total_encoded_bytes{test="Alle Spalten Ansicht",browser="Google Chrome"} 4972722
+playwright_console_errors{test="Alle Spalten Ansicht",browser="Google Chrome"} 0
+playwright_js_errors{test="Alle Spalten Ansicht",browser="Google Chrome"} 0
+playwright_failed_requests{test="Alle Spalten Ansicht",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Alle Spalten Ansicht",browser="Google Chrome"} 1776066766
+playwright_ttfb_ms{test="Telefonie Ansicht",browser="Google Chrome"} 152
+playwright_domcontentloaded_ms{test="Telefonie Ansicht",browser="Google Chrome"} 1953
+playwright_load_ms{test="Telefonie Ansicht",browser="Google Chrome"} 3288
+playwright_interactive_ms{test="Telefonie Ansicht",browser="Google Chrome"} 1950
+playwright_fcp_ms{test="Telefonie Ansicht",browser="Google Chrome"} 1772
+playwright_lcp_ms{test="Telefonie Ansicht",browser="Google Chrome"} 1860
+playwright_cls{test="Telefonie Ansicht",browser="Google Chrome"} 0.10409135072761112
+playwright_total_requests{test="Telefonie Ansicht",browser="Google Chrome"} 142
+playwright_total_transfer_bytes{test="Telefonie Ansicht",browser="Google Chrome"} 4508697
+playwright_total_encoded_bytes{test="Telefonie Ansicht",browser="Google Chrome"} 4466097
+playwright_console_errors{test="Telefonie Ansicht",browser="Google Chrome"} 0
+playwright_js_errors{test="Telefonie Ansicht",browser="Google Chrome"} 0
+playwright_failed_requests{test="Telefonie Ansicht",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Telefonie Ansicht",browser="Google Chrome"} 1776066986
+playwright_ttfb_ms{test="Falladmin Dashboard",browser="Google Chrome"} 7124
+playwright_domcontentloaded_ms{test="Falladmin Dashboard",browser="Google Chrome"} 9106
+playwright_load_ms{test="Falladmin Dashboard",browser="Google Chrome"} 9198
+playwright_interactive_ms{test="Falladmin Dashboard",browser="Google Chrome"} 9103
+playwright_fcp_ms{test="Falladmin Dashboard",browser="Google Chrome"} 8884
+playwright_lcp_ms{test="Falladmin Dashboard",browser="Google Chrome"} 11240
+playwright_cls{test="Falladmin Dashboard",browser="Google Chrome"} 0.3576580958896213
+playwright_total_requests{test="Falladmin Dashboard",browser="Google Chrome"} 135
+playwright_total_transfer_bytes{test="Falladmin Dashboard",browser="Google Chrome"} 3827134
+playwright_total_encoded_bytes{test="Falladmin Dashboard",browser="Google Chrome"} 3883274
+playwright_console_errors{test="Falladmin Dashboard",browser="Google Chrome"} 0
+playwright_js_errors{test="Falladmin Dashboard",browser="Google Chrome"} 0
+playwright_failed_requests{test="Falladmin Dashboard",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Falladmin Dashboard",browser="Google Chrome"} 1776067005
+playwright_ttfb_ms{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 7643
+playwright_domcontentloaded_ms{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 9692
+playwright_load_ms{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 9810
+playwright_interactive_ms{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 9689
+playwright_fcp_ms{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 9484
+playwright_lcp_ms{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 9680
+playwright_cls{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 0.16870046615600587
+playwright_total_requests{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 143
+playwright_total_transfer_bytes{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 3827572
+playwright_total_encoded_bytes{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 3928832
+playwright_console_errors{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 0
+playwright_js_errors{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 0
+playwright_failed_requests{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 1776067041
+playwright_ttfb_ms{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 9762
+playwright_domcontentloaded_ms{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 11696
+playwright_load_ms{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 11733
+playwright_interactive_ms{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 11693
+playwright_fcp_ms{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 11568
+playwright_lcp_ms{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 14804
+playwright_cls{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 0.35196701622009274
+playwright_total_requests{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 135
+playwright_total_transfer_bytes{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 3827126
+playwright_total_encoded_bytes{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 3883128
+playwright_console_errors{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 0
+playwright_js_errors{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 0
+playwright_failed_requests{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 1776067063
+playwright_ttfb_ms{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 190
+playwright_domcontentloaded_ms{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 2381
+playwright_load_ms{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 2658
+playwright_interactive_ms{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 2378
+playwright_fcp_ms{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 2136
+playwright_lcp_ms{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 2652
+playwright_cls{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 0.19261935583750406
+playwright_total_requests{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 158
+playwright_total_transfer_bytes{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 2573897
+playwright_total_encoded_bytes{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 2707738
+playwright_console_errors{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 0
+playwright_js_errors{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 0
+playwright_failed_requests{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 1776067072
+playwright_ttfb_ms{test="Latenztest-SRUV-HP",browser="Google Chrome"} 24
+playwright_domcontentloaded_ms{test="Latenztest-SRUV-HP",browser="Google Chrome"} 710
+playwright_load_ms{test="Latenztest-SRUV-HP",browser="Google Chrome"} 1094
+playwright_interactive_ms{test="Latenztest-SRUV-HP",browser="Google Chrome"} 664
+playwright_fcp_ms{test="Latenztest-SRUV-HP",browser="Google Chrome"} 456
+playwright_lcp_ms{test="Latenztest-SRUV-HP",browser="Google Chrome"} 456
+playwright_cls{test="Latenztest-SRUV-HP",browser="Google Chrome"} 0.012763971169789636
+playwright_total_requests{test="Latenztest-SRUV-HP",browser="Google Chrome"} 89
+playwright_total_transfer_bytes{test="Latenztest-SRUV-HP",browser="Google Chrome"} 2563366
+playwright_total_encoded_bytes{test="Latenztest-SRUV-HP",browser="Google Chrome"} 2538166
+playwright_console_errors{test="Latenztest-SRUV-HP",browser="Google Chrome"} 0
+playwright_js_errors{test="Latenztest-SRUV-HP",browser="Google Chrome"} 0
+playwright_failed_requests{test="Latenztest-SRUV-HP",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Latenztest-SRUV-HP",browser="Google Chrome"} 1776067075
+playwright_ttfb_ms{test="Latenztest-E-Antrag",browser="Google Chrome"} 14
+playwright_domcontentloaded_ms{test="Latenztest-E-Antrag",browser="Google Chrome"} 738
+playwright_load_ms{test="Latenztest-E-Antrag",browser="Google Chrome"} 738
+playwright_interactive_ms{test="Latenztest-E-Antrag",browser="Google Chrome"} 73
+playwright_fcp_ms{test="Latenztest-E-Antrag",browser="Google Chrome"} 1688
+playwright_lcp_ms{test="Latenztest-E-Antrag",browser="Google Chrome"} 6300
+playwright_cls{test="Latenztest-E-Antrag",browser="Google Chrome"} 0.010044856071472168
+playwright_total_requests{test="Latenztest-E-Antrag",browser="Google Chrome"} 33
+playwright_total_transfer_bytes{test="Latenztest-E-Antrag",browser="Google Chrome"} 8421698
+playwright_total_encoded_bytes{test="Latenztest-E-Antrag",browser="Google Chrome"} 8413898
+playwright_console_errors{test="Latenztest-E-Antrag",browser="Google Chrome"} 2
+playwright_js_errors{test="Latenztest-E-Antrag",browser="Google Chrome"} 0
+playwright_failed_requests{test="Latenztest-E-Antrag",browser="Google Chrome"} 2
+playwright_last_run_timestamp{test="Latenztest-E-Antrag",browser="Google Chrome"} 1776067126
+playwright_ttfb_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 136
+playwright_domcontentloaded_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 2126
+playwright_load_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 3625
+playwright_interactive_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 2119
+playwright_fcp_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 1944
+playwright_lcp_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 2024
+playwright_cls{test="Alle Spalten Ansicht",browser="Google Chrome"} 0.09976352347267999
+playwright_total_requests{test="Alle Spalten Ansicht",browser="Google Chrome"} 142
+playwright_total_transfer_bytes{test="Alle Spalten Ansicht",browser="Google Chrome"} 5015375
+playwright_total_encoded_bytes{test="Alle Spalten Ansicht",browser="Google Chrome"} 4972775
+playwright_console_errors{test="Alle Spalten Ansicht",browser="Google Chrome"} 0
+playwright_js_errors{test="Alle Spalten Ansicht",browser="Google Chrome"} 0
+playwright_failed_requests{test="Alle Spalten Ansicht",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Alle Spalten Ansicht",browser="Google Chrome"} 1776068070
+playwright_ttfb_ms{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 196
+playwright_domcontentloaded_ms{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 2307
+playwright_load_ms{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 3920
+playwright_interactive_ms{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 2302
+playwright_fcp_ms{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 2044
+playwright_lcp_ms{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 2128
+playwright_cls{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 0.10410846769809723
+playwright_total_requests{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 142
+playwright_total_transfer_bytes{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 4633642
+playwright_total_encoded_bytes{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 4591042
+playwright_console_errors{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 0
+playwright_js_errors{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 0
+playwright_failed_requests{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 1776068245
+playwright_ttfb_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 138
+playwright_domcontentloaded_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 2345
+playwright_load_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 3845
+playwright_interactive_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 2340
+playwright_fcp_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 2144
+playwright_lcp_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 2192
+playwright_cls{test="Alle Spalten Ansicht",browser="Google Chrome"} 0.09976352347267999
+playwright_total_requests{test="Alle Spalten Ansicht",browser="Google Chrome"} 142
+playwright_total_transfer_bytes{test="Alle Spalten Ansicht",browser="Google Chrome"} 5015252
+playwright_total_encoded_bytes{test="Alle Spalten Ansicht",browser="Google Chrome"} 4972652
+playwright_console_errors{test="Alle Spalten Ansicht",browser="Google Chrome"} 0
+playwright_js_errors{test="Alle Spalten Ansicht",browser="Google Chrome"} 0
+playwright_failed_requests{test="Alle Spalten Ansicht",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Alle Spalten Ansicht",browser="Google Chrome"} 1776068297
+playwright_ttfb_ms{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 172
+playwright_domcontentloaded_ms{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 2109
+playwright_load_ms{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 3095
+playwright_interactive_ms{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 2106
+playwright_fcp_ms{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 1920
+playwright_lcp_ms{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 2036
+playwright_cls{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 0.16971720055739087
+playwright_total_requests{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 142
+playwright_total_transfer_bytes{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 4633556
+playwright_total_encoded_bytes{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 4590956
+playwright_console_errors{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 0
+playwright_js_errors{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 0
+playwright_failed_requests{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 1776068318
+playwright_ttfb_ms{test="Telefonie Ansicht",browser="Google Chrome"} 256
+playwright_domcontentloaded_ms{test="Telefonie Ansicht",browser="Google Chrome"} 2267
+playwright_load_ms{test="Telefonie Ansicht",browser="Google Chrome"} 3417
+playwright_interactive_ms{test="Telefonie Ansicht",browser="Google Chrome"} 2263
+playwright_fcp_ms{test="Telefonie Ansicht",browser="Google Chrome"} 1976
+playwright_lcp_ms{test="Telefonie Ansicht",browser="Google Chrome"} 2092
+playwright_cls{test="Telefonie Ansicht",browser="Google Chrome"} 0.16777126541402604
+playwright_total_requests{test="Telefonie Ansicht",browser="Google Chrome"} 142
+playwright_total_transfer_bytes{test="Telefonie Ansicht",browser="Google Chrome"} 4508675
+playwright_total_encoded_bytes{test="Telefonie Ansicht",browser="Google Chrome"} 4466075
+playwright_console_errors{test="Telefonie Ansicht",browser="Google Chrome"} 0
+playwright_js_errors{test="Telefonie Ansicht",browser="Google Chrome"} 0
+playwright_failed_requests{test="Telefonie Ansicht",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Telefonie Ansicht",browser="Google Chrome"} 1776068336
+playwright_ttfb_ms{test="Falladmin Dashboard",browser="Google Chrome"} 134
+playwright_domcontentloaded_ms{test="Falladmin Dashboard",browser="Google Chrome"} 2134
+playwright_load_ms{test="Falladmin Dashboard",browser="Google Chrome"} 2160
+playwright_interactive_ms{test="Falladmin Dashboard",browser="Google Chrome"} 2130
+playwright_fcp_ms{test="Falladmin Dashboard",browser="Google Chrome"} 1960
+playwright_lcp_ms{test="Falladmin Dashboard",browser="Google Chrome"} 4012
+playwright_cls{test="Falladmin Dashboard",browser="Google Chrome"} 0.3576580958896213
+playwright_total_requests{test="Falladmin Dashboard",browser="Google Chrome"} 135
+playwright_total_transfer_bytes{test="Falladmin Dashboard",browser="Google Chrome"} 3827132
+playwright_total_encoded_bytes{test="Falladmin Dashboard",browser="Google Chrome"} 3883020
+playwright_console_errors{test="Falladmin Dashboard",browser="Google Chrome"} 0
+playwright_js_errors{test="Falladmin Dashboard",browser="Google Chrome"} 0
+playwright_failed_requests{test="Falladmin Dashboard",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Falladmin Dashboard",browser="Google Chrome"} 1776068347
+playwright_ttfb_ms{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 131
+playwright_domcontentloaded_ms{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 2258
+playwright_load_ms{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 2343
+playwright_interactive_ms{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 2255
+playwright_fcp_ms{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 2104
+playwright_lcp_ms{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 2188
+playwright_cls{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 0.167299370235867
+playwright_total_requests{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 143
+playwright_total_transfer_bytes{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 3827587
+playwright_total_encoded_bytes{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 3928811
+playwright_console_errors{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 0
+playwright_js_errors{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 0
+playwright_failed_requests{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 1776068366
+playwright_ttfb_ms{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 116
+playwright_domcontentloaded_ms{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 2444
+playwright_load_ms{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 2473
+playwright_interactive_ms{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 2440
+playwright_fcp_ms{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 2276
+playwright_lcp_ms{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 4644
+playwright_cls{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 0.20518955442640513
+playwright_total_requests{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 134
+playwright_total_transfer_bytes{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 3824466
+playwright_total_encoded_bytes{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 3880294
+playwright_console_errors{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 0
+playwright_js_errors{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 0
+playwright_failed_requests{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 1776068378
+playwright_ttfb_ms{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 115
+playwright_domcontentloaded_ms{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 2299
+playwright_load_ms{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 2369
+playwright_interactive_ms{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 2295
+playwright_fcp_ms{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 1940
+playwright_lcp_ms{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 1940
+playwright_cls{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 0.19261935583750406
+playwright_total_requests{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 165
+playwright_total_transfer_bytes{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 2640153
+playwright_total_encoded_bytes{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 2771894
+playwright_console_errors{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 0
+playwright_js_errors{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 0
+playwright_failed_requests{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 1776068388
+playwright_ttfb_ms{test="Latenztest-SRUV-HP",browser="Google Chrome"} 24
+playwright_domcontentloaded_ms{test="Latenztest-SRUV-HP",browser="Google Chrome"} 973
+playwright_load_ms{test="Latenztest-SRUV-HP",browser="Google Chrome"} 1478
+playwright_interactive_ms{test="Latenztest-SRUV-HP",browser="Google Chrome"} 918
+playwright_fcp_ms{test="Latenztest-SRUV-HP",browser="Google Chrome"} 624
+playwright_lcp_ms{test="Latenztest-SRUV-HP",browser="Google Chrome"} 624
+playwright_cls{test="Latenztest-SRUV-HP",browser="Google Chrome"} 0.016982811874813503
+playwright_total_requests{test="Latenztest-SRUV-HP",browser="Google Chrome"} 89
+playwright_total_transfer_bytes{test="Latenztest-SRUV-HP",browser="Google Chrome"} 2563366
+playwright_total_encoded_bytes{test="Latenztest-SRUV-HP",browser="Google Chrome"} 2538166
+playwright_console_errors{test="Latenztest-SRUV-HP",browser="Google Chrome"} 0
+playwright_js_errors{test="Latenztest-SRUV-HP",browser="Google Chrome"} 0
+playwright_failed_requests{test="Latenztest-SRUV-HP",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Latenztest-SRUV-HP",browser="Google Chrome"} 1776068392
+playwright_ttfb_ms{test="Latenztest-E-Antrag",browser="Google Chrome"} 13
+playwright_domcontentloaded_ms{test="Latenztest-E-Antrag",browser="Google Chrome"} 892
+playwright_load_ms{test="Latenztest-E-Antrag",browser="Google Chrome"} 892
+playwright_interactive_ms{test="Latenztest-E-Antrag",browser="Google Chrome"} 87
+playwright_fcp_ms{test="Latenztest-E-Antrag",browser="Google Chrome"} 2264
+playwright_lcp_ms{test="Latenztest-E-Antrag",browser="Google Chrome"} 8236
+playwright_cls{test="Latenztest-E-Antrag",browser="Google Chrome"} 0.010044856071472168
+playwright_total_requests{test="Latenztest-E-Antrag",browser="Google Chrome"} 33
+playwright_total_transfer_bytes{test="Latenztest-E-Antrag",browser="Google Chrome"} 8421698
+playwright_total_encoded_bytes{test="Latenztest-E-Antrag",browser="Google Chrome"} 8413898
+playwright_console_errors{test="Latenztest-E-Antrag",browser="Google Chrome"} 2
+playwright_js_errors{test="Latenztest-E-Antrag",browser="Google Chrome"} 0
+playwright_failed_requests{test="Latenztest-E-Antrag",browser="Google Chrome"} 2
+playwright_last_run_timestamp{test="Latenztest-E-Antrag",browser="Google Chrome"} 1776068446
+playwright_ttfb_ms{test="Falladmin Dashboard",browser="Mozilla Firefox"} 1573
+playwright_domcontentloaded_ms{test="Falladmin Dashboard",browser="Mozilla Firefox"} 4912
+playwright_load_ms{test="Falladmin Dashboard",browser="Mozilla Firefox"} 5026
+playwright_interactive_ms{test="Falladmin Dashboard",browser="Mozilla Firefox"} 4904
+playwright_fcp_ms{test="Falladmin Dashboard",browser="Mozilla Firefox"} 4040
+playwright_lcp_ms{test="Falladmin Dashboard",browser="Mozilla Firefox"} 7034
+playwright_cls{test="Falladmin Dashboard",browser="Mozilla Firefox"} 0
+playwright_total_requests{test="Falladmin Dashboard",browser="Mozilla Firefox"} 147
+playwright_total_transfer_bytes{test="Falladmin Dashboard",browser="Mozilla Firefox"} 3898714
+playwright_total_encoded_bytes{test="Falladmin Dashboard",browser="Mozilla Firefox"} 4517559
+playwright_console_errors{test="Falladmin Dashboard",browser="Mozilla Firefox"} 1
+playwright_js_errors{test="Falladmin Dashboard",browser="Mozilla Firefox"} 0
+playwright_failed_requests{test="Falladmin Dashboard",browser="Mozilla Firefox"} 0
+playwright_last_run_timestamp{test="Falladmin Dashboard",browser="Mozilla Firefox"} 1776070931
+playwright_ttfb_ms{test="Latenztest-EaSe-Dashboard",browser="Mozilla Firefox"} 777
+playwright_domcontentloaded_ms{test="Latenztest-EaSe-Dashboard",browser="Mozilla Firefox"} 3486
+playwright_load_ms{test="Latenztest-EaSe-Dashboard",browser="Mozilla Firefox"} 3621
+playwright_interactive_ms{test="Latenztest-EaSe-Dashboard",browser="Mozilla Firefox"} 3478
+playwright_fcp_ms{test="Latenztest-EaSe-Dashboard",browser="Mozilla Firefox"} 2868
+playwright_lcp_ms{test="Latenztest-EaSe-Dashboard",browser="Mozilla Firefox"} 2882
+playwright_cls{test="Latenztest-EaSe-Dashboard",browser="Mozilla Firefox"} 0
+playwright_total_requests{test="Latenztest-EaSe-Dashboard",browser="Mozilla Firefox"} 155
+playwright_total_transfer_bytes{test="Latenztest-EaSe-Dashboard",browser="Mozilla Firefox"} 3899197
+playwright_total_encoded_bytes{test="Latenztest-EaSe-Dashboard",browser="Mozilla Firefox"} 4563318
+playwright_console_errors{test="Latenztest-EaSe-Dashboard",browser="Mozilla Firefox"} 1
+playwright_js_errors{test="Latenztest-EaSe-Dashboard",browser="Mozilla Firefox"} 0
+playwright_failed_requests{test="Latenztest-EaSe-Dashboard",browser="Mozilla Firefox"} 0
+playwright_last_run_timestamp{test="Latenztest-EaSe-Dashboard",browser="Mozilla Firefox"} 1776070960
+playwright_ttfb_ms{test="Latenzzeit-Schli-Dashboard",browser="Mozilla Firefox"} 1037
+playwright_domcontentloaded_ms{test="Latenzzeit-Schli-Dashboard",browser="Mozilla Firefox"} 4043
+playwright_load_ms{test="Latenzzeit-Schli-Dashboard",browser="Mozilla Firefox"} 4177
+playwright_interactive_ms{test="Latenzzeit-Schli-Dashboard",browser="Mozilla Firefox"} 4034
+playwright_fcp_ms{test="Latenzzeit-Schli-Dashboard",browser="Mozilla Firefox"} 3569
+playwright_lcp_ms{test="Latenzzeit-Schli-Dashboard",browser="Mozilla Firefox"} 6161
+playwright_cls{test="Latenzzeit-Schli-Dashboard",browser="Mozilla Firefox"} 0
+playwright_total_requests{test="Latenzzeit-Schli-Dashboard",browser="Mozilla Firefox"} 146
+playwright_total_transfer_bytes{test="Latenzzeit-Schli-Dashboard",browser="Mozilla Firefox"} 3896167
+playwright_total_encoded_bytes{test="Latenzzeit-Schli-Dashboard",browser="Mozilla Firefox"} 4515312
+playwright_console_errors{test="Latenzzeit-Schli-Dashboard",browser="Mozilla Firefox"} 1
+playwright_js_errors{test="Latenzzeit-Schli-Dashboard",browser="Mozilla Firefox"} 0
+playwright_failed_requests{test="Latenzzeit-Schli-Dashboard",browser="Mozilla Firefox"} 0
+playwright_last_run_timestamp{test="Latenzzeit-Schli-Dashboard",browser="Mozilla Firefox"} 1776070973
+playwright_ttfb_ms{test="Latenztest-PDF-oeffnen",browser="Mozilla Firefox"} 925
+playwright_domcontentloaded_ms{test="Latenztest-PDF-oeffnen",browser="Mozilla Firefox"} 4849
+playwright_load_ms{test="Latenztest-PDF-oeffnen",browser="Mozilla Firefox"} 4891
+playwright_interactive_ms{test="Latenztest-PDF-oeffnen",browser="Mozilla Firefox"} 4841
+playwright_fcp_ms{test="Latenztest-PDF-oeffnen",browser="Mozilla Firefox"} 4212
+playwright_lcp_ms{test="Latenztest-PDF-oeffnen",browser="Mozilla Firefox"} 4246
+playwright_cls{test="Latenztest-PDF-oeffnen",browser="Mozilla Firefox"} 0
+playwright_total_requests{test="Latenztest-PDF-oeffnen",browser="Mozilla Firefox"} 177
+playwright_total_transfer_bytes{test="Latenztest-PDF-oeffnen",browser="Mozilla Firefox"} 2696334
+playwright_total_encoded_bytes{test="Latenztest-PDF-oeffnen",browser="Mozilla Firefox"} 3318882
+playwright_console_errors{test="Latenztest-PDF-oeffnen",browser="Mozilla Firefox"} 2
+playwright_js_errors{test="Latenztest-PDF-oeffnen",browser="Mozilla Firefox"} 0
+playwright_failed_requests{test="Latenztest-PDF-oeffnen",browser="Mozilla Firefox"} 0
+playwright_last_run_timestamp{test="Latenztest-PDF-oeffnen",browser="Mozilla Firefox"} 1776070984
+playwright_ttfb_ms{test="Latenztest-SRUV-HP",browser="Mozilla Firefox"} 21
+playwright_domcontentloaded_ms{test="Latenztest-SRUV-HP",browser="Mozilla Firefox"} 724
+playwright_load_ms{test="Latenztest-SRUV-HP",browser="Mozilla Firefox"} 1463
+playwright_interactive_ms{test="Latenztest-SRUV-HP",browser="Mozilla Firefox"} 637
+playwright_fcp_ms{test="Latenztest-SRUV-HP",browser="Mozilla Firefox"} 420
+playwright_lcp_ms{test="Latenztest-SRUV-HP",browser="Mozilla Firefox"} 438
+playwright_cls{test="Latenztest-SRUV-HP",browser="Mozilla Firefox"} 0
+playwright_total_requests{test="Latenztest-SRUV-HP",browser="Mozilla Firefox"} 88
+playwright_total_transfer_bytes{test="Latenztest-SRUV-HP",browser="Mozilla Firefox"} 2574652
+playwright_total_encoded_bytes{test="Latenztest-SRUV-HP",browser="Mozilla Firefox"} 2557263
+playwright_console_errors{test="Latenztest-SRUV-HP",browser="Mozilla Firefox"} 0
+playwright_js_errors{test="Latenztest-SRUV-HP",browser="Mozilla Firefox"} 0
+playwright_failed_requests{test="Latenztest-SRUV-HP",browser="Mozilla Firefox"} 0
+playwright_last_run_timestamp{test="Latenztest-SRUV-HP",browser="Mozilla Firefox"} 1776070988
+playwright_ttfb_ms{test="Latenztest-E-Antrag",browser="Mozilla Firefox"} 10
+playwright_domcontentloaded_ms{test="Latenztest-E-Antrag",browser="Mozilla Firefox"} 1505
+playwright_load_ms{test="Latenztest-E-Antrag",browser="Mozilla Firefox"} 1505
+playwright_interactive_ms{test="Latenztest-E-Antrag",browser="Mozilla Firefox"} 196
+playwright_fcp_ms{test="Latenztest-E-Antrag",browser="Mozilla Firefox"} 2539
+playwright_lcp_ms{test="Latenztest-E-Antrag",browser="Mozilla Firefox"} 8221
+playwright_cls{test="Latenztest-E-Antrag",browser="Mozilla Firefox"} 0
+playwright_total_requests{test="Latenztest-E-Antrag",browser="Mozilla Firefox"} 33
+playwright_total_transfer_bytes{test="Latenztest-E-Antrag",browser="Mozilla Firefox"} 8421698
+playwright_total_encoded_bytes{test="Latenztest-E-Antrag",browser="Mozilla Firefox"} 12225727
+playwright_console_errors{test="Latenztest-E-Antrag",browser="Mozilla Firefox"} 0
+playwright_js_errors{test="Latenztest-E-Antrag",browser="Mozilla Firefox"} 0
+playwright_failed_requests{test="Latenztest-E-Antrag",browser="Mozilla Firefox"} 2
+playwright_last_run_timestamp{test="Latenztest-E-Antrag",browser="Mozilla Firefox"} 1776071043
+playwright_ttfb_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 159
+playwright_domcontentloaded_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 1885
+playwright_load_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 2732
+playwright_interactive_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 1882
+playwright_fcp_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 1800
+playwright_lcp_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 2000
+playwright_cls{test="Alle Spalten Ansicht",browser="Google Chrome"} 0.10786011821784315
+playwright_total_requests{test="Alle Spalten Ansicht",browser="Google Chrome"} 142
+playwright_total_transfer_bytes{test="Alle Spalten Ansicht",browser="Google Chrome"} 5015309
+playwright_total_encoded_bytes{test="Alle Spalten Ansicht",browser="Google Chrome"} 4972709
+playwright_console_errors{test="Alle Spalten Ansicht",browser="Google Chrome"} 0
+playwright_js_errors{test="Alle Spalten Ansicht",browser="Google Chrome"} 0
+playwright_failed_requests{test="Alle Spalten Ansicht",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Alle Spalten Ansicht",browser="Google Chrome"} 1776330099
+playwright_ttfb_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 372
+playwright_domcontentloaded_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 2589
+playwright_load_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 4002
+playwright_interactive_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 2586
+playwright_fcp_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 2480
+playwright_lcp_ms{test="Alle Spalten Ansicht",browser="Google Chrome"} 2516
+playwright_cls{test="Alle Spalten Ansicht",browser="Google Chrome"} 0.11127591138603077
+playwright_total_requests{test="Alle Spalten Ansicht",browser="Google Chrome"} 142
+playwright_total_transfer_bytes{test="Alle Spalten Ansicht",browser="Google Chrome"} 5015305
+playwright_total_encoded_bytes{test="Alle Spalten Ansicht",browser="Google Chrome"} 4972705
+playwright_console_errors{test="Alle Spalten Ansicht",browser="Google Chrome"} 0
+playwright_js_errors{test="Alle Spalten Ansicht",browser="Google Chrome"} 0
+playwright_failed_requests{test="Alle Spalten Ansicht",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Alle Spalten Ansicht",browser="Google Chrome"} 1776330483
+playwright_ttfb_ms{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 1085
+playwright_domcontentloaded_ms{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 3016
+playwright_load_ms{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 4021
+playwright_interactive_ms{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 3012
+playwright_fcp_ms{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 2912
+playwright_lcp_ms{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 3112
+playwright_cls{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 0.09707342150730727
+playwright_total_requests{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 142
+playwright_total_transfer_bytes{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 4633807
+playwright_total_encoded_bytes{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 4591207
+playwright_console_errors{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 0
+playwright_js_errors{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 0
+playwright_failed_requests{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Sachverhalt (Verfahrensakte) Ansicht",browser="Google Chrome"} 1776330516
+playwright_ttfb_ms{test="Telefonie Ansicht",browser="Google Chrome"} 704
+playwright_domcontentloaded_ms{test="Telefonie Ansicht",browser="Google Chrome"} 2817
+playwright_load_ms{test="Telefonie Ansicht",browser="Google Chrome"} 4150
+playwright_interactive_ms{test="Telefonie Ansicht",browser="Google Chrome"} 2813
+playwright_fcp_ms{test="Telefonie Ansicht",browser="Google Chrome"} 2692
+playwright_lcp_ms{test="Telefonie Ansicht",browser="Google Chrome"} 2992
+playwright_cls{test="Telefonie Ansicht",browser="Google Chrome"} 0.17469332163184084
+playwright_total_requests{test="Telefonie Ansicht",browser="Google Chrome"} 142
+playwright_total_transfer_bytes{test="Telefonie Ansicht",browser="Google Chrome"} 4508778
+playwright_total_encoded_bytes{test="Telefonie Ansicht",browser="Google Chrome"} 4466178
+playwright_console_errors{test="Telefonie Ansicht",browser="Google Chrome"} 0
+playwright_js_errors{test="Telefonie Ansicht",browser="Google Chrome"} 0
+playwright_failed_requests{test="Telefonie Ansicht",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Telefonie Ansicht",browser="Google Chrome"} 1776330544
+playwright_ttfb_ms{test="Falladmin Dashboard",browser="Google Chrome"} 153
+playwright_domcontentloaded_ms{test="Falladmin Dashboard",browser="Google Chrome"} 2182
+playwright_load_ms{test="Falladmin Dashboard",browser="Google Chrome"} 2287
+playwright_interactive_ms{test="Falladmin Dashboard",browser="Google Chrome"} 2179
+playwright_fcp_ms{test="Falladmin Dashboard",browser="Google Chrome"} 2092
+playwright_lcp_ms{test="Falladmin Dashboard",browser="Google Chrome"} 4028
+playwright_cls{test="Falladmin Dashboard",browser="Google Chrome"} 0.22765297932645598
+playwright_total_requests{test="Falladmin Dashboard",browser="Google Chrome"} 135
+playwright_total_transfer_bytes{test="Falladmin Dashboard",browser="Google Chrome"} 3827021
+playwright_total_encoded_bytes{test="Falladmin Dashboard",browser="Google Chrome"} 3882909
+playwright_console_errors{test="Falladmin Dashboard",browser="Google Chrome"} 0
+playwright_js_errors{test="Falladmin Dashboard",browser="Google Chrome"} 0
+playwright_failed_requests{test="Falladmin Dashboard",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Falladmin Dashboard",browser="Google Chrome"} 1776330554
+playwright_ttfb_ms{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 142
+playwright_domcontentloaded_ms{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 2108
+playwright_load_ms{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 2200
+playwright_interactive_ms{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 2103
+playwright_fcp_ms{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 1940
+playwright_lcp_ms{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 1940
+playwright_cls{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 0.1864235560498248
+playwright_total_requests{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 143
+playwright_total_transfer_bytes{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 3827302
+playwright_total_encoded_bytes{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 3928463
+playwright_console_errors{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 0
+playwright_js_errors{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 0
+playwright_failed_requests{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Latenztest-EaSe-Dashboard",browser="Google Chrome"} 1776330573
+playwright_ttfb_ms{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 14315
+playwright_domcontentloaded_ms{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 16327
+playwright_load_ms{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 16469
+playwright_interactive_ms{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 16323
+playwright_fcp_ms{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 16248
+playwright_lcp_ms{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 19016
+playwright_cls{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 0.36124881480792476
+playwright_total_requests{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 135
+playwright_total_transfer_bytes{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 3827010
+playwright_total_encoded_bytes{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 3882766
+playwright_console_errors{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 0
+playwright_js_errors{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 0
+playwright_failed_requests{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Latenzzeit-Schli-Dashboard",browser="Google Chrome"} 1776330598
+playwright_ttfb_ms{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 186
+playwright_domcontentloaded_ms{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 2182
+playwright_load_ms{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 2216
+playwright_interactive_ms{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 2179
+playwright_fcp_ms{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 1932
+playwright_lcp_ms{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 2048
+playwright_cls{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 0.21025480457170864
+playwright_total_requests{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 166
+playwright_total_transfer_bytes{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 2647625
+playwright_total_encoded_bytes{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 2779066
+playwright_console_errors{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 0
+playwright_js_errors{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 0
+playwright_failed_requests{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Latenztest-PDF-oeffnen",browser="Google Chrome"} 1776330606
+playwright_ttfb_ms{test="Latenztest-SRUV-HP",browser="Google Chrome"} 26
+playwright_domcontentloaded_ms{test="Latenztest-SRUV-HP",browser="Google Chrome"} 797
+playwright_load_ms{test="Latenztest-SRUV-HP",browser="Google Chrome"} 1144
+playwright_interactive_ms{test="Latenztest-SRUV-HP",browser="Google Chrome"} 746
+playwright_fcp_ms{test="Latenztest-SRUV-HP",browser="Google Chrome"} 520
+playwright_lcp_ms{test="Latenztest-SRUV-HP",browser="Google Chrome"} 520
+playwright_cls{test="Latenztest-SRUV-HP",browser="Google Chrome"} 0.016135341977064614
+playwright_total_requests{test="Latenztest-SRUV-HP",browser="Google Chrome"} 89
+playwright_total_transfer_bytes{test="Latenztest-SRUV-HP",browser="Google Chrome"} 2563366
+playwright_total_encoded_bytes{test="Latenztest-SRUV-HP",browser="Google Chrome"} 2538166
+playwright_console_errors{test="Latenztest-SRUV-HP",browser="Google Chrome"} 0
+playwright_js_errors{test="Latenztest-SRUV-HP",browser="Google Chrome"} 0
+playwright_failed_requests{test="Latenztest-SRUV-HP",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Latenztest-SRUV-HP",browser="Google Chrome"} 1776330608
+playwright_ttfb_ms{test="Latenztest-E-Antrag",browser="Google Chrome"} 44
+playwright_domcontentloaded_ms{test="Latenztest-E-Antrag",browser="Google Chrome"} 708
+playwright_load_ms{test="Latenztest-E-Antrag",browser="Google Chrome"} 708
+playwright_interactive_ms{test="Latenztest-E-Antrag",browser="Google Chrome"} 123
+playwright_fcp_ms{test="Latenztest-E-Antrag",browser="Google Chrome"} 1676
+playwright_lcp_ms{test="Latenztest-E-Antrag",browser="Google Chrome"} 6048
+playwright_cls{test="Latenztest-E-Antrag",browser="Google Chrome"} 0.024318931102752683
+playwright_total_requests{test="Latenztest-E-Antrag",browser="Google Chrome"} 33
+playwright_total_transfer_bytes{test="Latenztest-E-Antrag",browser="Google Chrome"} 8421698
+playwright_total_encoded_bytes{test="Latenztest-E-Antrag",browser="Google Chrome"} 8413898
+playwright_console_errors{test="Latenztest-E-Antrag",browser="Google Chrome"} 2
+playwright_js_errors{test="Latenztest-E-Antrag",browser="Google Chrome"} 0
+playwright_failed_requests{test="Latenztest-E-Antrag",browser="Google Chrome"} 2
+playwright_last_run_timestamp{test="Latenztest-E-Antrag",browser="Google Chrome"} 1776330658
+playwright_ttfb_ms{test="Latenztest-Lexemo-Antragsrücknahme",browser="Microsoft Edge"} 14
+playwright_domcontentloaded_ms{test="Latenztest-Lexemo-Antragsrücknahme",browser="Microsoft Edge"} 664
+playwright_load_ms{test="Latenztest-Lexemo-Antragsrücknahme",browser="Microsoft Edge"} 664
+playwright_interactive_ms{test="Latenztest-Lexemo-Antragsrücknahme",browser="Microsoft Edge"} 107
+playwright_fcp_ms{test="Latenztest-Lexemo-Antragsrücknahme",browser="Microsoft Edge"} 1500
+playwright_lcp_ms{test="Latenztest-Lexemo-Antragsrücknahme",browser="Microsoft Edge"} 2952
+playwright_cls{test="Latenztest-Lexemo-Antragsrücknahme",browser="Microsoft Edge"} 0.014042395697699652
+playwright_total_requests{test="Latenztest-Lexemo-Antragsrücknahme",browser="Microsoft Edge"} 108
+playwright_total_transfer_bytes{test="Latenztest-Lexemo-Antragsrücknahme",browser="Microsoft Edge"} 8584503
+playwright_total_encoded_bytes{test="Latenztest-Lexemo-Antragsrücknahme",browser="Microsoft Edge"} 8575803
+playwright_console_errors{test="Latenztest-Lexemo-Antragsrücknahme",browser="Microsoft Edge"} 1
+playwright_js_errors{test="Latenztest-Lexemo-Antragsrücknahme",browser="Microsoft Edge"} 0
+playwright_failed_requests{test="Latenztest-Lexemo-Antragsrücknahme",browser="Microsoft Edge"} 1
+playwright_last_run_timestamp{test="Latenztest-Lexemo-Antragsrücknahme",browser="Microsoft Edge"} 1777026579
+playwright_ttfb_ms{test="Endpunkt HighQ",browser="Microsoft Edge"} 13
+playwright_domcontentloaded_ms{test="Endpunkt HighQ",browser="Microsoft Edge"} 611
+playwright_load_ms{test="Endpunkt HighQ",browser="Microsoft Edge"} 611
+playwright_interactive_ms{test="Endpunkt HighQ",browser="Microsoft Edge"} 71
+playwright_fcp_ms{test="Endpunkt HighQ",browser="Microsoft Edge"} 1712
+playwright_lcp_ms{test="Endpunkt HighQ",browser="Microsoft Edge"} 2528
+playwright_cls{test="Endpunkt HighQ",browser="Microsoft Edge"} 0.08560334046681724
+playwright_total_requests{test="Endpunkt HighQ",browser="Microsoft Edge"} 36
+playwright_total_transfer_bytes{test="Endpunkt HighQ",browser="Microsoft Edge"} 8422211
+playwright_total_encoded_bytes{test="Endpunkt HighQ",browser="Microsoft Edge"} 8414711
+playwright_console_errors{test="Endpunkt HighQ",browser="Microsoft Edge"} 2
+playwright_js_errors{test="Endpunkt HighQ",browser="Microsoft Edge"} 0
+playwright_failed_requests{test="Endpunkt HighQ",browser="Microsoft Edge"} 2
+playwright_last_run_timestamp{test="Endpunkt HighQ",browser="Microsoft Edge"} 1777027707
+playwright_ttfb_ms{test="Endpunkt Lexemo",browser="Microsoft Edge"} 14
+playwright_domcontentloaded_ms{test="Endpunkt Lexemo",browser="Microsoft Edge"} 668
+playwright_load_ms{test="Endpunkt Lexemo",browser="Microsoft Edge"} 668
+playwright_interactive_ms{test="Endpunkt Lexemo",browser="Microsoft Edge"} 97
+playwright_fcp_ms{test="Endpunkt Lexemo",browser="Microsoft Edge"} 1636
+playwright_lcp_ms{test="Endpunkt Lexemo",browser="Microsoft Edge"} 2220
+playwright_cls{test="Endpunkt Lexemo",browser="Microsoft Edge"} 0.08560306241777214
+playwright_total_requests{test="Endpunkt Lexemo",browser="Microsoft Edge"} 36
+playwright_total_transfer_bytes{test="Endpunkt Lexemo",browser="Microsoft Edge"} 8422211
+playwright_total_encoded_bytes{test="Endpunkt Lexemo",browser="Microsoft Edge"} 8414711
+playwright_console_errors{test="Endpunkt Lexemo",browser="Microsoft Edge"} 2
+playwright_js_errors{test="Endpunkt Lexemo",browser="Microsoft Edge"} 0
+playwright_failed_requests{test="Endpunkt Lexemo",browser="Microsoft Edge"} 2
+playwright_last_run_timestamp{test="Endpunkt Lexemo",browser="Microsoft Edge"} 1777027741
+playwright_ttfb_ms{test="Endpunkt HighQ",browser="Microsoft Edge"} 14
+playwright_domcontentloaded_ms{test="Endpunkt HighQ",browser="Microsoft Edge"} 625
+playwright_load_ms{test="Endpunkt HighQ",browser="Microsoft Edge"} 626
+playwright_interactive_ms{test="Endpunkt HighQ",browser="Microsoft Edge"} 76
+playwright_fcp_ms{test="Endpunkt HighQ",browser="Microsoft Edge"} 1620
+playwright_lcp_ms{test="Endpunkt HighQ",browser="Microsoft Edge"} 2440
+playwright_cls{test="Endpunkt HighQ",browser="Microsoft Edge"} 0.08560465433862476
+playwright_total_requests{test="Endpunkt HighQ",browser="Microsoft Edge"} 36
+playwright_total_transfer_bytes{test="Endpunkt HighQ",browser="Microsoft Edge"} 8422211
+playwright_total_encoded_bytes{test="Endpunkt HighQ",browser="Microsoft Edge"} 8414711
+playwright_console_errors{test="Endpunkt HighQ",browser="Microsoft Edge"} 2
+playwright_js_errors{test="Endpunkt HighQ",browser="Microsoft Edge"} 0
+playwright_failed_requests{test="Endpunkt HighQ",browser="Microsoft Edge"} 2
+playwright_last_run_timestamp{test="Endpunkt HighQ",browser="Microsoft Edge"} 1777027791
+playwright_ttfb_ms{test="Performance-View",browser="Microsoft Edge"} 287
+playwright_domcontentloaded_ms{test="Performance-View",browser="Microsoft Edge"} 2273
+playwright_load_ms{test="Performance-View",browser="Microsoft Edge"} 4521
+playwright_interactive_ms{test="Performance-View",browser="Microsoft Edge"} 2267
+playwright_fcp_ms{test="Performance-View",browser="Microsoft Edge"} 2124
+playwright_lcp_ms{test="Performance-View",browser="Microsoft Edge"} 2124
+playwright_cls{test="Performance-View",browser="Microsoft Edge"} 0.009812022182676527
+playwright_total_requests{test="Performance-View",browser="Microsoft Edge"} 128
+playwright_total_transfer_bytes{test="Performance-View",browser="Microsoft Edge"} 3993629
+playwright_total_encoded_bytes{test="Performance-View",browser="Microsoft Edge"} 3955229
+playwright_console_errors{test="Performance-View",browser="Microsoft Edge"} 0
+playwright_js_errors{test="Performance-View",browser="Microsoft Edge"} 0
+playwright_failed_requests{test="Performance-View",browser="Microsoft Edge"} 0
+playwright_last_run_timestamp{test="Performance-View",browser="Microsoft Edge"} 1777903559
+playwright_ttfb_ms{test="Performance-View",browser="Google Chrome"} 327
+playwright_domcontentloaded_ms{test="Performance-View",browser="Google Chrome"} 2414
+playwright_load_ms{test="Performance-View",browser="Google Chrome"} 3637
+playwright_interactive_ms{test="Performance-View",browser="Google Chrome"} 2411
+playwright_fcp_ms{test="Performance-View",browser="Google Chrome"} 2332
+playwright_lcp_ms{test="Performance-View",browser="Google Chrome"} 2332
+playwright_cls{test="Performance-View",browser="Google Chrome"} 0.008767939541074965
+playwright_total_requests{test="Performance-View",browser="Google Chrome"} 129
+playwright_total_transfer_bytes{test="Performance-View",browser="Google Chrome"} 3995924
+playwright_total_encoded_bytes{test="Performance-View",browser="Google Chrome"} 3957224
+playwright_console_errors{test="Performance-View",browser="Google Chrome"} 0
+playwright_js_errors{test="Performance-View",browser="Google Chrome"} 0
+playwright_failed_requests{test="Performance-View",browser="Google Chrome"} 0
+playwright_last_run_timestamp{test="Performance-View",browser="Google Chrome"} 1777903596
+playwright_ttfb_ms{test="Performance-View",browser="Microsoft Edge"} 137
+playwright_domcontentloaded_ms{test="Performance-View",browser="Microsoft Edge"} 2047
+playwright_load_ms{test="Performance-View",browser="Microsoft Edge"} 4250
+playwright_interactive_ms{test="Performance-View",browser="Microsoft Edge"} 2042
+playwright_fcp_ms{test="Performance-View",browser="Microsoft Edge"} 1928
+playwright_lcp_ms{test="Performance-View",browser="Microsoft Edge"} 1928
+playwright_cls{test="Performance-View",browser="Microsoft Edge"} 0.008767939541074965
+playwright_total_requests{test="Performance-View",browser="Microsoft Edge"} 134
+playwright_total_transfer_bytes{test="Performance-View",browser="Microsoft Edge"} 4001617
+playwright_total_encoded_bytes{test="Performance-View",browser="Microsoft Edge"} 3961417
+playwright_console_errors{test="Performance-View",browser="Microsoft Edge"} 0
+playwright_js_errors{test="Performance-View",browser="Microsoft Edge"} 0
+playwright_failed_requests{test="Performance-View",browser="Microsoft Edge"} 0
+playwright_last_run_timestamp{test="Performance-View",browser="Microsoft Edge"} 1777903634
+playwright_ttfb_ms{test="Performance-View",browser="Microsoft Edge"} 241
+playwright_domcontentloaded_ms{test="Performance-View",browser="Microsoft Edge"} 2416
+playwright_load_ms{test="Performance-View",browser="Microsoft Edge"} 4254
+playwright_interactive_ms{test="Performance-View",browser="Microsoft Edge"} 2412
+playwright_fcp_ms{test="Performance-View",browser="Microsoft Edge"} 2236
+playwright_lcp_ms{test="Performance-View",browser="Microsoft Edge"} 2288
+playwright_cls{test="Performance-View",browser="Microsoft Edge"} 0.1159124132129881
+playwright_total_requests{test="Performance-View",browser="Microsoft Edge"} 142
+playwright_total_transfer_bytes{test="Performance-View",browser="Microsoft Edge"} 4478094
+playwright_total_encoded_bytes{test="Performance-View",browser="Microsoft Edge"} 4435494
+playwright_console_errors{test="Performance-View",browser="Microsoft Edge"} 0
+playwright_js_errors{test="Performance-View",browser="Microsoft Edge"} 0
+playwright_failed_requests{test="Performance-View",browser="Microsoft Edge"} 0
+playwright_last_run_timestamp{test="Performance-View",browser="Microsoft Edge"} 1777904082
+playwright_ttfb_ms{test="Performance-View-Sachverhalt",browser="Microsoft Edge"} 203
+playwright_domcontentloaded_ms{test="Performance-View-Sachverhalt",browser="Microsoft Edge"} 2470
+playwright_load_ms{test="Performance-View-Sachverhalt",browser="Microsoft Edge"} 5123
+playwright_interactive_ms{test="Performance-View-Sachverhalt",browser="Microsoft Edge"} 2464
+playwright_fcp_ms{test="Performance-View-Sachverhalt",browser="Microsoft Edge"} 2240
+playwright_lcp_ms{test="Performance-View-Sachverhalt",browser="Microsoft Edge"} 2240
+playwright_cls{test="Performance-View-Sachverhalt",browser="Microsoft Edge"} 0.11584834500153858
+playwright_total_requests{test="Performance-View-Sachverhalt",browser="Microsoft Edge"} 142
+playwright_total_transfer_bytes{test="Performance-View-Sachverhalt",browser="Microsoft Edge"} 4479220
+playwright_total_encoded_bytes{test="Performance-View-Sachverhalt",browser="Microsoft Edge"} 4436620
+playwright_console_errors{test="Performance-View-Sachverhalt",browser="Microsoft Edge"} 0
+playwright_js_errors{test="Performance-View-Sachverhalt",browser="Microsoft Edge"} 0
+playwright_failed_requests{test="Performance-View-Sachverhalt",browser="Microsoft Edge"} 0
+playwright_last_run_timestamp{test="Performance-View-Sachverhalt",browser="Microsoft Edge"} 1778048926
+playwright_ttfb_ms{test="Performance-View-Telefonie",browser="Microsoft Edge"} 146
+playwright_domcontentloaded_ms{test="Performance-View-Telefonie",browser="Microsoft Edge"} 2428
+playwright_load_ms{test="Performance-View-Telefonie",browser="Microsoft Edge"} 4682
+playwright_interactive_ms{test="Performance-View-Telefonie",browser="Microsoft Edge"} 2424
+playwright_fcp_ms{test="Performance-View-Telefonie",browser="Microsoft Edge"} 2252
+playwright_lcp_ms{test="Performance-View-Telefonie",browser="Microsoft Edge"} 2252
+playwright_cls{test="Performance-View-Telefonie",browser="Microsoft Edge"} 0.11688994709650674
+playwright_total_requests{test="Performance-View-Telefonie",browser="Microsoft Edge"} 142
+playwright_total_transfer_bytes{test="Performance-View-Telefonie",browser="Microsoft Edge"} 4479295
+playwright_total_encoded_bytes{test="Performance-View-Telefonie",browser="Microsoft Edge"} 4436695
+playwright_console_errors{test="Performance-View-Telefonie",browser="Microsoft Edge"} 0
+playwright_js_errors{test="Performance-View-Telefonie",browser="Microsoft Edge"} 0
+playwright_failed_requests{test="Performance-View-Telefonie",browser="Microsoft Edge"} 0
+playwright_last_run_timestamp{test="Performance-View-Telefonie",browser="Microsoft Edge"} 1778048958
+playwright_ttfb_ms{test="Performance-View",browser="Microsoft Edge"} 159
+playwright_domcontentloaded_ms{test="Performance-View",browser="Microsoft Edge"} 2153
+playwright_load_ms{test="Performance-View",browser="Microsoft Edge"} 4494
+playwright_interactive_ms{test="Performance-View",browser="Microsoft Edge"} 2149
+playwright_fcp_ms{test="Performance-View",browser="Microsoft Edge"} 1896
+playwright_lcp_ms{test="Performance-View",browser="Microsoft Edge"} 1896
+playwright_cls{test="Performance-View",browser="Microsoft Edge"} 0.11584390707810718
+playwright_total_requests{test="Performance-View",browser="Microsoft Edge"} 142
+playwright_total_transfer_bytes{test="Performance-View",browser="Microsoft Edge"} 4481097
+playwright_total_encoded_bytes{test="Performance-View",browser="Microsoft Edge"} 4438497
+playwright_console_errors{test="Performance-View",browser="Microsoft Edge"} 0
+playwright_js_errors{test="Performance-View",browser="Microsoft Edge"} 0
+playwright_failed_requests{test="Performance-View",browser="Microsoft Edge"} 0
+playwright_last_run_timestamp{test="Performance-View",browser="Microsoft Edge"} 1778048989
+playwright_ttfb_ms{test="Performance-View-Sachverhalt",browser="Microsoft Edge"} 178
+playwright_domcontentloaded_ms{test="Performance-View-Sachverhalt",browser="Microsoft Edge"} 2400
+playwright_load_ms{test="Performance-View-Sachverhalt",browser="Microsoft Edge"} 4225
+playwright_interactive_ms{test="Performance-View-Sachverhalt",browser="Microsoft Edge"} 2395
+playwright_fcp_ms{test="Performance-View-Sachverhalt",browser="Microsoft Edge"} 2172
+playwright_lcp_ms{test="Performance-View-Sachverhalt",browser="Microsoft Edge"} 2172
+playwright_cls{test="Performance-View-Sachverhalt",browser="Microsoft Edge"} 0.11689242764314015
+playwright_total_requests{test="Performance-View-Sachverhalt",browser="Microsoft Edge"} 142
+playwright_total_transfer_bytes{test="Performance-View-Sachverhalt",browser="Microsoft Edge"} 4479290
+playwright_total_encoded_bytes{test="Performance-View-Sachverhalt",browser="Microsoft Edge"} 4436690
+playwright_console_errors{test="Performance-View-Sachverhalt",browser="Microsoft Edge"} 0
+playwright_js_errors{test="Performance-View-Sachverhalt",browser="Microsoft Edge"} 0
+playwright_failed_requests{test="Performance-View-Sachverhalt",browser="Microsoft Edge"} 0
+playwright_last_run_timestamp{test="Performance-View-Sachverhalt",browser="Microsoft Edge"} 1778048999
+playwright_ttfb_ms{test="Alle Spalten Ansicht",browser=""} 181
+playwright_domcontentloaded_ms{test="Alle Spalten Ansicht",browser=""} 2232
+playwright_load_ms{test="Alle Spalten Ansicht",browser=""} 4460
+playwright_interactive_ms{test="Alle Spalten Ansicht",browser=""} 2229
+playwright_fcp_ms{test="Alle Spalten Ansicht",browser=""} 1996
+playwright_lcp_ms{test="Alle Spalten Ansicht",browser=""} 1996
+playwright_cls{test="Alle Spalten Ansicht",browser=""} 0.09994446543852488
+playwright_total_requests{test="Alle Spalten Ansicht",browser=""} 141
+playwright_total_transfer_bytes{test="Alle Spalten Ansicht",browser=""} 5005432
+playwright_total_encoded_bytes{test="Alle Spalten Ansicht",browser=""} 4963132
+playwright_console_errors{test="Alle Spalten Ansicht",browser=""} 0
+playwright_js_errors{test="Alle Spalten Ansicht",browser=""} 0
+playwright_failed_requests{test="Alle Spalten Ansicht",browser=""} 0
+playwright_last_run_timestamp{test="Alle Spalten Ansicht",browser=""} 1779199544
+playwright_ttfb_ms{test="Sachverhalt (Verfahrensakte) Ansicht",browser=""} 292
+playwright_domcontentloaded_ms{test="Sachverhalt (Verfahrensakte) Ansicht",browser=""} 10282
+playwright_load_ms{test="Sachverhalt (Verfahrensakte) Ansicht",browser=""} 12387
+playwright_interactive_ms{test="Sachverhalt (Verfahrensakte) Ansicht",browser=""} 10277
+playwright_fcp_ms{test="Sachverhalt (Verfahrensakte) Ansicht",browser=""} 9668
+playwright_lcp_ms{test="Sachverhalt (Verfahrensakte) Ansicht",browser=""} 9696
+playwright_cls{test="Sachverhalt (Verfahrensakte) Ansicht",browser=""} 0.16841217402617137
+playwright_total_requests{test="Sachverhalt (Verfahrensakte) Ansicht",browser=""} 141
+playwright_total_transfer_bytes{test="Sachverhalt (Verfahrensakte) Ansicht",browser=""} 4637020
+playwright_total_encoded_bytes{test="Sachverhalt (Verfahrensakte) Ansicht",browser=""} 4594720
+playwright_console_errors{test="Sachverhalt (Verfahrensakte) Ansicht",browser=""} 0
+playwright_js_errors{test="Sachverhalt (Verfahrensakte) Ansicht",browser=""} 0
+playwright_failed_requests{test="Sachverhalt (Verfahrensakte) Ansicht",browser=""} 0
+playwright_last_run_timestamp{test="Sachverhalt (Verfahrensakte) Ansicht",browser=""} 1779262696
+playwright_ttfb_ms{test="Performance-View-Sachverhalt",browser=""} 18155
+playwright_domcontentloaded_ms{test="Performance-View-Sachverhalt",browser=""} 20683
+playwright_load_ms{test="Performance-View-Sachverhalt",browser=""} 22538
+playwright_interactive_ms{test="Performance-View-Sachverhalt",browser=""} 20679
+playwright_fcp_ms{test="Performance-View-Sachverhalt",browser=""} 20424
+playwright_lcp_ms{test="Performance-View-Sachverhalt",browser=""} 20424
+playwright_cls{test="Performance-View-Sachverhalt",browser=""} 0.16840059596962398
+playwright_total_requests{test="Performance-View-Sachverhalt",browser=""} 141
+playwright_total_transfer_bytes{test="Performance-View-Sachverhalt",browser=""} 4596125
+playwright_total_encoded_bytes{test="Performance-View-Sachverhalt",browser=""} 4553825
+playwright_console_errors{test="Performance-View-Sachverhalt",browser=""} 0
+playwright_js_errors{test="Performance-View-Sachverhalt",browser=""} 0
+playwright_failed_requests{test="Performance-View-Sachverhalt",browser=""} 0
+playwright_last_run_timestamp{test="Performance-View-Sachverhalt",browser=""} 1779262766

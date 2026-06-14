@@ -1,0 +1,14 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: "node-exporter"
+    static_configs:
+      - targets: ["node-exporter:9100"]
+    metrics_path: /metrics
+
+  - job_name: "graph-api-check"
+    static_configs:
+      - targets: ["graph-check:8000"]
+
+# Der Node Exporter liest automatisch alle .prom-Dateien im textfile-collector-Verzeichnis.

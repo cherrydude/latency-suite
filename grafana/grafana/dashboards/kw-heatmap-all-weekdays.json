@@ -1,0 +1,489 @@
+{
+	"annotations": {
+		"list": [
+			{
+				"builtIn": 1,
+				"datasource": {
+					"type": "grafana",
+					"uid": "-- Grafana --"
+				},
+				"enable": true,
+				"hide": true,
+				"iconColor": "rgba(0, 211, 255, 1)",
+				"name": "Annotations & Alerts",
+				"type": "dashboard"
+			}
+		]
+	},
+	"editable": true,
+	"fiscalYearStartMonth": 0,
+	"graphTooltip": 1,
+	"id": null,
+	"links": [],
+	"panels": [
+		{
+			"datasource": {
+				"type": "prometheus",
+				"uid": "ff7dib7iujpxcf"
+			},
+			"fieldConfig": {
+				"defaults": {
+					"color": {
+						"mode": "thresholds"
+					},
+					"custom": {
+						"align": "center",
+						"cellOptions": {
+							"type": "color-background"
+						},
+						"inspect": true
+					},
+					"mappings": [
+						{
+							"type": "special",
+							"options": {
+								"match": "null",
+								"result": {
+									"text": "",
+									"color": "transparent"
+								}
+							}
+						},
+						{
+							"type": "special",
+							"options": {
+								"match": "nan",
+								"result": {
+									"text": "",
+									"color": "transparent"
+								}
+							}
+						}
+					],
+					"noValue": "",
+					"thresholds": {
+						"mode": "absolute",
+						"steps": [
+							{
+								"color": "#299c46",
+								"value": null
+							},
+							{
+								"color": "#EAB839",
+								"value": 300
+							},
+							{
+								"color": "#FF9830",
+								"value": 1000
+							},
+							{
+								"color": "#E02F44",
+								"value": 3000
+							},
+							{
+								"color": "#8B0000",
+								"value": 10000
+							}
+						]
+					},
+					"unit": "ms"
+				},
+				"overrides": [
+					{
+						"matcher": {
+							"id": "byName",
+							"options": "Time"
+						},
+						"properties": [
+							{
+								"id": "displayName",
+								"value": "Kalenderwoche"
+							},
+							{
+								"id": "custom.align",
+								"value": "left"
+							},
+							{
+								"id": "custom.width",
+								"value": 160
+							},
+							{
+								"id": "unit",
+								"value": "time:[KW]WW"
+							},
+							{
+								"id": "custom.cellOptions",
+								"value": {
+									"type": "auto"
+								}
+							},
+							{
+								"id": "color",
+								"value": {
+									"mode": "fixed",
+									"fixedColor": "text"
+								}
+							}
+						]
+					},
+					{
+						"matcher": {
+							"id": "byName",
+							"options": "Value #A"
+						},
+						"properties": [
+							{
+								"id": "displayName",
+								"value": "Mo"
+							},
+							{
+								"id": "custom.width",
+								"value": 48
+							}
+						]
+					},
+					{
+						"matcher": {
+							"id": "byName",
+							"options": "Value #B"
+						},
+						"properties": [
+							{
+								"id": "displayName",
+								"value": "Di"
+							},
+							{
+								"id": "custom.width",
+								"value": 48
+							}
+						]
+					},
+					{
+						"matcher": {
+							"id": "byName",
+							"options": "Value #C"
+						},
+						"properties": [
+							{
+								"id": "displayName",
+								"value": "Mi"
+							},
+							{
+								"id": "custom.width",
+								"value": 48
+							}
+						]
+					},
+					{
+						"matcher": {
+							"id": "byName",
+							"options": "Value #D"
+						},
+						"properties": [
+							{
+								"id": "displayName",
+								"value": "Do"
+							},
+							{
+								"id": "custom.width",
+								"value": 48
+							}
+						]
+					},
+					{
+						"matcher": {
+							"id": "byName",
+							"options": "Value #E"
+						},
+						"properties": [
+							{
+								"id": "displayName",
+								"value": "Fr"
+							},
+							{
+								"id": "custom.width",
+								"value": 48
+							}
+						]
+					},
+					{
+						"matcher": {
+							"id": "byName",
+							"options": "Value #F"
+						},
+						"properties": [
+							{
+								"id": "displayName",
+								"value": "Sa"
+							},
+							{
+								"id": "custom.width",
+								"value": 48
+							}
+						]
+					},
+					{
+						"matcher": {
+							"id": "byName",
+							"options": "Value #G"
+						},
+						"properties": [
+							{
+								"id": "displayName",
+								"value": "So"
+							},
+							{
+								"id": "custom.width",
+								"value": 48
+							}
+						]
+					},
+					{
+						"matcher": {
+							"id": "byName",
+							"options": "Value #H"
+						},
+						"properties": [
+							{
+								"id": "displayName",
+								"value": "Ø Mo-So"
+							},
+							{
+								"id": "custom.width",
+								"value": 88
+							},
+							{
+								"id": "custom.align",
+								"value": "right"
+							}
+						]
+					}
+				]
+			},
+			"gridPos": {
+				"h": 12,
+				"w": 24,
+				"x": 0,
+				"y": 10
+			},
+			"id": 33,
+			"options": {
+				"footer": {
+					"countRows": false,
+					"fields": "",
+					"reducer": [
+						"sum"
+					],
+					"show": false
+				},
+				"showHeader": true,
+				"sortBy": [
+					{
+						"desc": true,
+						"displayName": "Kalenderwoche"
+					}
+				]
+			},
+			"targets": [
+				{
+					"editorMode": "code",
+					"expr": "(((avg(((playwright_selector_latency_ms{browser=\"Google Chrome\",test=~\"Alle Spalten Ansicht|Sachverhalt [(]Verfahrensakte[)] Ansicht|Telefonie Ansicht|Falladmin Dashboard|Latenzzeit-Schli-Dashboard\"} offset 6d) >= 0) or ((playwright_latency{browser=\"Google Chrome\",test=~\"Latenztest-PDF-oeffnen|Latenztest-EaSe-Dashboard\"} offset 6d) >= 0))) + (avg(((playwright_selector_latency_ms{browser=\"Microsoft Edge\",test=~\"Alle Spalten Ansicht|Sachverhalt [(]Verfahrensakte[)] Ansicht|Telefonie Ansicht|Falladmin Dashboard|Latenzzeit-Schli-Dashboard\"} offset 6d) >= 0) or ((playwright_latency{browser=\"Microsoft Edge\",test=~\"Latenztest-PDF-oeffnen|Latenztest-EaSe-Dashboard\"} offset 6d) >= 0)))) / 2)",
+					"format": "table",
+				"instant": true,
+					"legendFormat": "Mo",
+					"refId": "A"
+				},
+				{
+					"editorMode": "code",
+					"expr": "(((avg(((playwright_selector_latency_ms{browser=\"Google Chrome\",test=~\"Alle Spalten Ansicht|Sachverhalt [(]Verfahrensakte[)] Ansicht|Telefonie Ansicht|Falladmin Dashboard|Latenzzeit-Schli-Dashboard\"} offset 5d) >= 0) or ((playwright_latency{browser=\"Google Chrome\",test=~\"Latenztest-PDF-oeffnen|Latenztest-EaSe-Dashboard\"} offset 5d) >= 0))) + (avg(((playwright_selector_latency_ms{browser=\"Microsoft Edge\",test=~\"Alle Spalten Ansicht|Sachverhalt [(]Verfahrensakte[)] Ansicht|Telefonie Ansicht|Falladmin Dashboard|Latenzzeit-Schli-Dashboard\"} offset 5d) >= 0) or ((playwright_latency{browser=\"Microsoft Edge\",test=~\"Latenztest-PDF-oeffnen|Latenztest-EaSe-Dashboard\"} offset 5d) >= 0)))) / 2)",
+					"format": "table",
+				"instant": true,
+					"legendFormat": "Di",
+					"refId": "B"
+				},
+				{
+					"editorMode": "code",
+					"expr": "(((avg(((playwright_selector_latency_ms{browser=\"Google Chrome\",test=~\"Alle Spalten Ansicht|Sachverhalt [(]Verfahrensakte[)] Ansicht|Telefonie Ansicht|Falladmin Dashboard|Latenzzeit-Schli-Dashboard\"} offset 4d) >= 0) or ((playwright_latency{browser=\"Google Chrome\",test=~\"Latenztest-PDF-oeffnen|Latenztest-EaSe-Dashboard\"} offset 4d) >= 0))) + (avg(((playwright_selector_latency_ms{browser=\"Microsoft Edge\",test=~\"Alle Spalten Ansicht|Sachverhalt [(]Verfahrensakte[)] Ansicht|Telefonie Ansicht|Falladmin Dashboard|Latenzzeit-Schli-Dashboard\"} offset 4d) >= 0) or ((playwright_latency{browser=\"Microsoft Edge\",test=~\"Latenztest-PDF-oeffnen|Latenztest-EaSe-Dashboard\"} offset 4d) >= 0)))) / 2)",
+					"format": "table",
+				"instant": true,
+					"legendFormat": "Mi",
+					"refId": "C"
+				},
+				{
+					"editorMode": "code",
+					"expr": "(((avg(((playwright_selector_latency_ms{browser=\"Google Chrome\",test=~\"Alle Spalten Ansicht|Sachverhalt [(]Verfahrensakte[)] Ansicht|Telefonie Ansicht|Falladmin Dashboard|Latenzzeit-Schli-Dashboard\"} offset 3d) >= 0) or ((playwright_latency{browser=\"Google Chrome\",test=~\"Latenztest-PDF-oeffnen|Latenztest-EaSe-Dashboard\"} offset 3d) >= 0))) + (avg(((playwright_selector_latency_ms{browser=\"Microsoft Edge\",test=~\"Alle Spalten Ansicht|Sachverhalt [(]Verfahrensakte[)] Ansicht|Telefonie Ansicht|Falladmin Dashboard|Latenzzeit-Schli-Dashboard\"} offset 3d) >= 0) or ((playwright_latency{browser=\"Microsoft Edge\",test=~\"Latenztest-PDF-oeffnen|Latenztest-EaSe-Dashboard\"} offset 3d) >= 0)))) / 2)",
+					"format": "table",
+				"instant": true,
+					"legendFormat": "Do",
+					"refId": "D"
+				},
+				{
+					"editorMode": "code",
+					"expr": "(((avg(((playwright_selector_latency_ms{browser=\"Google Chrome\",test=~\"Alle Spalten Ansicht|Sachverhalt [(]Verfahrensakte[)] Ansicht|Telefonie Ansicht|Falladmin Dashboard|Latenzzeit-Schli-Dashboard\"} offset 2d) >= 0) or ((playwright_latency{browser=\"Google Chrome\",test=~\"Latenztest-PDF-oeffnen|Latenztest-EaSe-Dashboard\"} offset 2d) >= 0))) + (avg(((playwright_selector_latency_ms{browser=\"Microsoft Edge\",test=~\"Alle Spalten Ansicht|Sachverhalt [(]Verfahrensakte[)] Ansicht|Telefonie Ansicht|Falladmin Dashboard|Latenzzeit-Schli-Dashboard\"} offset 2d) >= 0) or ((playwright_latency{browser=\"Microsoft Edge\",test=~\"Latenztest-PDF-oeffnen|Latenztest-EaSe-Dashboard\"} offset 2d) >= 0)))) / 2)",
+					"format": "table",
+				"instant": true,
+					"legendFormat": "Fr",
+					"refId": "E"
+				},
+				{
+					"editorMode": "code",
+					"expr": "(((avg(((playwright_selector_latency_ms{browser=\"Google Chrome\",test=~\"Alle Spalten Ansicht|Sachverhalt [(]Verfahrensakte[)] Ansicht|Telefonie Ansicht|Falladmin Dashboard|Latenzzeit-Schli-Dashboard\"} offset 1d) >= 0) or ((playwright_latency{browser=\"Google Chrome\",test=~\"Latenztest-PDF-oeffnen|Latenztest-EaSe-Dashboard\"} offset 1d) >= 0))) + (avg(((playwright_selector_latency_ms{browser=\"Microsoft Edge\",test=~\"Alle Spalten Ansicht|Sachverhalt [(]Verfahrensakte[)] Ansicht|Telefonie Ansicht|Falladmin Dashboard|Latenzzeit-Schli-Dashboard\"} offset 1d) >= 0) or ((playwright_latency{browser=\"Microsoft Edge\",test=~\"Latenztest-PDF-oeffnen|Latenztest-EaSe-Dashboard\"} offset 1d) >= 0)))) / 2)",
+					"format": "table",
+				"instant": true,
+					"legendFormat": "Sa",
+					"refId": "F"
+				},
+				{
+					"editorMode": "code",
+					"expr": "(((avg(((playwright_selector_latency_ms{browser=\"Google Chrome\",test=~\"Alle Spalten Ansicht|Sachverhalt [(]Verfahrensakte[)] Ansicht|Telefonie Ansicht|Falladmin Dashboard|Latenzzeit-Schli-Dashboard\"}) >= 0) or ((playwright_latency{browser=\"Google Chrome\",test=~\"Latenztest-PDF-oeffnen|Latenztest-EaSe-Dashboard\"}) >= 0))) + (avg(((playwright_selector_latency_ms{browser=\"Microsoft Edge\",test=~\"Alle Spalten Ansicht|Sachverhalt [(]Verfahrensakte[)] Ansicht|Telefonie Ansicht|Falladmin Dashboard|Latenzzeit-Schli-Dashboard\"}) >= 0) or ((playwright_latency{browser=\"Microsoft Edge\",test=~\"Latenztest-PDF-oeffnen|Latenztest-EaSe-Dashboard\"}) >= 0)))) / 2)",
+					"format": "table",
+				"instant": true,
+					"legendFormat": "So",
+					"refId": "G"
+				},
+				{
+					"editorMode": "code",
+					"expr": "(((((avg(((playwright_selector_latency_ms{browser=\"Google Chrome\",test=~\"Alle Spalten Ansicht|Sachverhalt [(]Verfahrensakte[)] Ansicht|Telefonie Ansicht|Falladmin Dashboard|Latenzzeit-Schli-Dashboard\"} offset 6d) >= 0) or ((playwright_latency{browser=\"Google Chrome\",test=~\"Latenztest-PDF-oeffnen|Latenztest-EaSe-Dashboard\"} offset 6d) >= 0))) + (avg(((playwright_selector_latency_ms{browser=\"Microsoft Edge\",test=~\"Alle Spalten Ansicht|Sachverhalt [(]Verfahrensakte[)] Ansicht|Telefonie Ansicht|Falladmin Dashboard|Latenzzeit-Schli-Dashboard\"} offset 6d) >= 0) or ((playwright_latency{browser=\"Microsoft Edge\",test=~\"Latenztest-PDF-oeffnen|Latenztest-EaSe-Dashboard\"} offset 6d) >= 0)))) / 2) + (((avg(((playwright_selector_latency_ms{browser=\"Google Chrome\",test=~\"Alle Spalten Ansicht|Sachverhalt [(]Verfahrensakte[)] Ansicht|Telefonie Ansicht|Falladmin Dashboard|Latenzzeit-Schli-Dashboard\"} offset 5d) >= 0) or ((playwright_latency{browser=\"Google Chrome\",test=~\"Latenztest-PDF-oeffnen|Latenztest-EaSe-Dashboard\"} offset 5d) >= 0))) + (avg(((playwright_selector_latency_ms{browser=\"Microsoft Edge\",test=~\"Alle Spalten Ansicht|Sachverhalt [(]Verfahrensakte[)] Ansicht|Telefonie Ansicht|Falladmin Dashboard|Latenzzeit-Schli-Dashboard\"} offset 5d) >= 0) or ((playwright_latency{browser=\"Microsoft Edge\",test=~\"Latenztest-PDF-oeffnen|Latenztest-EaSe-Dashboard\"} offset 5d) >= 0)))) / 2) + (((avg(((playwright_selector_latency_ms{browser=\"Google Chrome\",test=~\"Alle Spalten Ansicht|Sachverhalt [(]Verfahrensakte[)] Ansicht|Telefonie Ansicht|Falladmin Dashboard|Latenzzeit-Schli-Dashboard\"} offset 4d) >= 0) or ((playwright_latency{browser=\"Google Chrome\",test=~\"Latenztest-PDF-oeffnen|Latenztest-EaSe-Dashboard\"} offset 4d) >= 0))) + (avg(((playwright_selector_latency_ms{browser=\"Microsoft Edge\",test=~\"Alle Spalten Ansicht|Sachverhalt [(]Verfahrensakte[)] Ansicht|Telefonie Ansicht|Falladmin Dashboard|Latenzzeit-Schli-Dashboard\"} offset 4d) >= 0) or ((playwright_latency{browser=\"Microsoft Edge\",test=~\"Latenztest-PDF-oeffnen|Latenztest-EaSe-Dashboard\"} offset 4d) >= 0)))) / 2) + (((avg(((playwright_selector_latency_ms{browser=\"Google Chrome\",test=~\"Alle Spalten Ansicht|Sachverhalt [(]Verfahrensakte[)] Ansicht|Telefonie Ansicht|Falladmin Dashboard|Latenzzeit-Schli-Dashboard\"} offset 3d) >= 0) or ((playwright_latency{browser=\"Google Chrome\",test=~\"Latenztest-PDF-oeffnen|Latenztest-EaSe-Dashboard\"} offset 3d) >= 0))) + (avg(((playwright_selector_latency_ms{browser=\"Microsoft Edge\",test=~\"Alle Spalten Ansicht|Sachverhalt [(]Verfahrensakte[)] Ansicht|Telefonie Ansicht|Falladmin Dashboard|Latenzzeit-Schli-Dashboard\"} offset 3d) >= 0) or ((playwright_latency{browser=\"Microsoft Edge\",test=~\"Latenztest-PDF-oeffnen|Latenztest-EaSe-Dashboard\"} offset 3d) >= 0)))) / 2) + (((avg(((playwright_selector_latency_ms{browser=\"Google Chrome\",test=~\"Alle Spalten Ansicht|Sachverhalt [(]Verfahrensakte[)] Ansicht|Telefonie Ansicht|Falladmin Dashboard|Latenzzeit-Schli-Dashboard\"} offset 2d) >= 0) or ((playwright_latency{browser=\"Google Chrome\",test=~\"Latenztest-PDF-oeffnen|Latenztest-EaSe-Dashboard\"} offset 2d) >= 0))) + (avg(((playwright_selector_latency_ms{browser=\"Microsoft Edge\",test=~\"Alle Spalten Ansicht|Sachverhalt [(]Verfahrensakte[)] Ansicht|Telefonie Ansicht|Falladmin Dashboard|Latenzzeit-Schli-Dashboard\"} offset 2d) >= 0) or ((playwright_latency{browser=\"Microsoft Edge\",test=~\"Latenztest-PDF-oeffnen|Latenztest-EaSe-Dashboard\"} offset 2d) >= 0)))) / 2) + (((avg(((playwright_selector_latency_ms{browser=\"Google Chrome\",test=~\"Alle Spalten Ansicht|Sachverhalt [(]Verfahrensakte[)] Ansicht|Telefonie Ansicht|Falladmin Dashboard|Latenzzeit-Schli-Dashboard\"} offset 1d) >= 0) or ((playwright_latency{browser=\"Google Chrome\",test=~\"Latenztest-PDF-oeffnen|Latenztest-EaSe-Dashboard\"} offset 1d) >= 0))) + (avg(((playwright_selector_latency_ms{browser=\"Microsoft Edge\",test=~\"Alle Spalten Ansicht|Sachverhalt [(]Verfahrensakte[)] Ansicht|Telefonie Ansicht|Falladmin Dashboard|Latenzzeit-Schli-Dashboard\"} offset 1d) >= 0) or ((playwright_latency{browser=\"Microsoft Edge\",test=~\"Latenztest-PDF-oeffnen|Latenztest-EaSe-Dashboard\"} offset 1d) >= 0)))) / 2) + (((avg(((playwright_selector_latency_ms{browser=\"Google Chrome\",test=~\"Alle Spalten Ansicht|Sachverhalt [(]Verfahrensakte[)] Ansicht|Telefonie Ansicht|Falladmin Dashboard|Latenzzeit-Schli-Dashboard\"}) >= 0) or ((playwright_latency{browser=\"Google Chrome\",test=~\"Latenztest-PDF-oeffnen|Latenztest-EaSe-Dashboard\"}) >= 0))) + (avg(((playwright_selector_latency_ms{browser=\"Microsoft Edge\",test=~\"Alle Spalten Ansicht|Sachverhalt [(]Verfahrensakte[)] Ansicht|Telefonie Ansicht|Falladmin Dashboard|Latenzzeit-Schli-Dashboard\"}) >= 0) or ((playwright_latency{browser=\"Microsoft Edge\",test=~\"Latenztest-PDF-oeffnen|Latenztest-EaSe-Dashboard\"}) >= 0)))) / 2)) / 7)",
+					"format": "table",
+				"instant": true,
+					"legendFormat": "Ø Mo-So",
+					"refId": "H"
+				}
+			],
+			"title": "KW HEATMAP Mo-So",
+			"transformations": [
+				{
+					"id": "joinByField",
+					"options": {
+						"byField": "Time",
+						"mode": "inner"
+					}
+				},
+				{
+					"id": "organize",
+					"options": {
+						"excludeByName": {},
+						"indexByName": {
+							"Time": 0,
+							"Mo": 1,
+							"Di": 2,
+							"Mi": 3,
+							"Do": 4,
+							"Fr": 5,
+							"Sa": 6,
+							"So": 7,
+							"Ø Mo-So": 8
+						},
+						"renameByName": {
+							"Time": "Kalenderwoche"
+						}
+					}
+				},
+				{
+					"id": "filterByValue",
+					"options": {
+						"type": "exclude",
+						"match": "any",
+						"filters": [
+							{
+								"fieldName": "Mo",
+								"config": {
+									"id": "isNull",
+									"options": {}
+								}
+							},
+							{
+								"fieldName": "Di",
+								"config": {
+									"id": "isNull",
+									"options": {}
+								}
+							},
+							{
+								"fieldName": "Mi",
+								"config": {
+									"id": "isNull",
+									"options": {}
+								}
+							},
+							{
+								"fieldName": "Do",
+								"config": {
+									"id": "isNull",
+									"options": {}
+								}
+							},
+							{
+								"fieldName": "Fr",
+								"config": {
+									"id": "isNull",
+									"options": {}
+								}
+							},
+							{
+								"fieldName": "Sa",
+								"config": {
+									"id": "isNull",
+									"options": {}
+								}
+							},
+							{
+								"fieldName": "So",
+								"config": {
+									"id": "isNull",
+									"options": {}
+								}
+							},
+							{
+								"fieldName": "Ø Mo-So",
+								"config": {
+									"id": "isNull",
+									"options": {}
+								}
+							}
+						]
+					}
+				}
+			],
+			"type": "table"
+		},
+		{
+			"datasource": {
+				"type": "grafana",
+				"uid": "-- Grafana --"
+			},
+			"gridPos": {
+				"h": 8,
+				"w": 12,
+				"x": 12,
+				"y": 22
+			},
+			"id": 40,
+			"options": {
+				"mode": "markdown",
+				"content": "### Farblegende (ms)\n- **Grün**: < 300 ms\n- **Gelb**: 300-999 ms\n- **Orange**: 1000-2999 ms\n- **Rot**: 3000-9999 ms\n- **Dunkelrot**: >= 10000 ms\n\n\nAnteil der letzten 7 Tage mit Tagesmittel <= 1000 ms.\n\n### Verwendete Tests (nur diese 7)\n- Alle Spalten Ansicht\n- Sachverhalt (Verfahrensakte) Ansicht\n- Telefonie Ansicht\n- Falladmin Dashboard\n- Latenzzeit-Schli-Dashboard\n- Latenztest-PDF-oeffnen\n- Latenztest-EaSe-Dashboard\n\nAktuell dargestellt: **alle vollständigen Wochen ab 23.01.26 00:01**."
+			},
+			"title": "Legende",
+			"type": "text"
+		}
+	],
+	"refresh": "1m",
+	"schemaVersion": 42,
+	"tags": [
+		"trends",
+		"latenz",
+		"sruv"
+	],
+	"templating": {
+		"list": []
+	},
+	"time": {
+		"from": "2026-01-23T00:01:00+01:00",
+		"to": "now"
+	},
+	"timepicker": {},
+	"timezone": "browser",
+	"title": "KW Heatmap Mo-So",
+	"uid": "kw-heatmap-moso-uuid",
+	"version": 1
+}

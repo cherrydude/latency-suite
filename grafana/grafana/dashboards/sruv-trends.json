@@ -1,0 +1,1255 @@
+{
+  "annotations": {"list": [{"builtIn": 1, "datasource": {"type": "grafana", "uid": "-- Grafana --"}, "enable": true, "hide": true, "iconColor": "rgba(0, 211, 255, 1)", "name": "Annotations & Alerts", "type": "dashboard"}]},
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 1,
+  "id": null,
+  "links": [],
+  "panels": [
+    {
+      "datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"},
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "palette-classic"},
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "Latenz (ms)",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "barWidthFactor": 0.6,
+            "drawStyle": "line",
+            "fillOpacity": 10,
+            "gradientMode": "none",
+            "hideFrom": {"legend": false, "tooltip": false, "viz": false},
+            "insertNulls": false,
+            "lineInterpolation": "smooth",
+            "lineWidth": 2,
+            "pointSize": 5,
+            "scaleDistribution": {"type": "linear"},
+            "showPoints": "never",
+            "spanNulls": false,
+            "stacking": {"group": "A", "mode": "none"},
+            "thresholdsStyle": {"mode": "off"}
+          },
+          "mappings": [],
+          "thresholds": {"mode": "absolute", "steps": [{"color": "green", "value": null}, {"color": "red", "value": 8000}]},
+          "unit": "ms"
+        },
+        "overrides": [
+          {
+            "matcher": {"id": "byRegexp", "options": ".*Aktuell.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 1},
+              {"id": "custom.fillOpacity", "value": 0},
+              {"id": "color", "value": {"fixedColor": "light-blue", "mode": "fixed"}}
+            ]
+          },
+          {
+            "matcher": {"id": "byRegexp", "options": ".*24h.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 2},
+              {"id": "color", "value": {"fixedColor": "green", "mode": "fixed"}}
+            ]
+          },
+          {
+            "matcher": {"id": "byRegexp", "options": ".*72h.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 2},
+              {"id": "color", "value": {"fixedColor": "yellow", "mode": "fixed"}}
+            ]
+          },
+          {
+            "matcher": {"id": "byRegexp", "options": ".*168h.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 3},
+              {"id": "color", "value": {"fixedColor": "orange", "mode": "fixed"}}
+            ]
+          }
+        ]
+      },
+      "gridPos": {"h": 10, "w": 24, "x": 0, "y": 0},
+      "id": 1,
+      "options": {
+        "legend": {
+          "calcs": ["lastNotNull", "mean"],
+          "displayMode": "table",
+          "placement": "right",
+          "showLegend": true
+        },
+        "tooltip": {"mode": "multi", "sort": "none"}
+      },
+      "targets": [
+        {
+          "editorMode": "code",
+          "expr": "playwright_latency{test=\"Latenztest-SRUV-HP\"}",
+          "legendFormat": "SRUV-HP Aktuell",
+          "range": true,
+          "refId": "A"
+        },
+        {
+          "editorMode": "code",
+          "expr": "avg_over_time(playwright_latency{test=\"Latenztest-SRUV-HP\"}[24h])",
+          "legendFormat": "SRUV-HP Ø 24h",
+          "range": true,
+          "refId": "B"
+        },
+        {
+          "editorMode": "code",
+          "expr": "avg_over_time(playwright_latency{test=\"Latenztest-SRUV-HP\"}[72h])",
+          "legendFormat": "SRUV-HP Ø 72h (3d)",
+          "range": true,
+          "refId": "C"
+        },
+        {
+          "editorMode": "code",
+          "expr": "avg_over_time(playwright_latency{test=\"Latenztest-SRUV-HP\"}[168h])",
+          "legendFormat": "SRUV-HP Ø 168h (7d)",
+          "range": true,
+          "refId": "D"
+        }
+      ],
+      "title": "SRUV-HP: Trend (Gleitende Durchschnitte)",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"},
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "palette-classic"},
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "Latenz (ms)",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "barWidthFactor": 0.6,
+            "drawStyle": "line",
+            "fillOpacity": 10,
+            "gradientMode": "none",
+            "hideFrom": {"legend": false, "tooltip": false, "viz": false},
+            "insertNulls": false,
+            "lineInterpolation": "smooth",
+            "lineWidth": 2,
+            "pointSize": 5,
+            "scaleDistribution": {"type": "linear"},
+            "showPoints": "never",
+            "spanNulls": false,
+            "stacking": {"group": "A", "mode": "none"},
+            "thresholdsStyle": {"mode": "off"}
+          },
+          "mappings": [],
+          "thresholds": {"mode": "absolute", "steps": [{"color": "green", "value": null}, {"color": "red", "value": 8000}]},
+          "unit": "ms"
+        },
+        "overrides": [
+          {
+            "matcher": {"id": "byRegexp", "options": ".*Aktuell.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 1},
+              {"id": "custom.fillOpacity", "value": 0},
+              {"id": "color", "value": {"fixedColor": "light-blue", "mode": "fixed"}}
+            ]
+          },
+          {
+            "matcher": {"id": "byRegexp", "options": ".*24h.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 2},
+              {"id": "color", "value": {"fixedColor": "green", "mode": "fixed"}}
+            ]
+          },
+          {
+            "matcher": {"id": "byRegexp", "options": ".*72h.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 2},
+              {"id": "color", "value": {"fixedColor": "yellow", "mode": "fixed"}}
+            ]
+          },
+          {
+            "matcher": {"id": "byRegexp", "options": ".*168h.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 3},
+              {"id": "color", "value": {"fixedColor": "orange", "mode": "fixed"}}
+            ]
+          }
+        ]
+      },
+      "gridPos": {"h": 10, "w": 24, "x": 0, "y": 10},
+      "id": 2,
+      "options": {
+        "legend": {
+          "calcs": ["lastNotNull", "mean"],
+          "displayMode": "table",
+          "placement": "right",
+          "showLegend": true
+        },
+        "tooltip": {"mode": "multi", "sort": "none"}
+      },
+      "targets": [
+        {
+          "editorMode": "code",
+          "expr": "playwright_selector_latency_ms{test=\"Latenztest-E-Antrag\"}",
+          "legendFormat": "E-Antrag Aktuell",
+          "range": true,
+          "refId": "A"
+        },
+        {
+          "editorMode": "code",
+          "expr": "avg_over_time(playwright_selector_latency_ms{test=\"Latenztest-E-Antrag\"}[24h])",
+          "legendFormat": "E-Antrag Ø 24h",
+          "range": true,
+          "refId": "B"
+        },
+        {
+          "editorMode": "code",
+          "expr": "avg_over_time(playwright_selector_latency_ms{test=\"Latenztest-E-Antrag\"}[72h])",
+          "legendFormat": "E-Antrag Ø 72h (3d)",
+          "range": true,
+          "refId": "C"
+        },
+        {
+          "editorMode": "code",
+          "expr": "avg_over_time(playwright_selector_latency_ms{test=\"Latenztest-E-Antrag\"}[168h])",
+          "legendFormat": "E-Antrag Ø 168h (7d)",
+          "range": true,
+          "refId": "D"
+        }
+      ],
+      "title": "E-Antrag: Trend (Gleitende Durchschnitte)",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"},
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "thresholds"},
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {"color": "green", "value": null},
+              {"color": "yellow", "value": 800},
+              {"color": "red", "value": 1000}
+            ]
+          },
+          "unit": "ms"
+        },
+        "overrides": []
+      },
+      "gridPos": {"h": 6, "w": 6, "x": 0, "y": 20},
+      "id": 3,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": ["lastNotNull"],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": true,
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.3.0",
+      "targets": [
+        {
+          "editorMode": "code",
+          "expr": "playwright_latency{test=\"Latenztest-SRUV-HP\"}",
+          "legendFormat": "SRUV-HP",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "SRUV-HP Status",
+      "type": "stat"
+    },
+    {
+      "datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"},
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "thresholds"},
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {"color": "green", "value": null},
+              {"color": "yellow", "value": 5000},
+              {"color": "red", "value": 6000}
+            ]
+          },
+          "unit": "ms"
+        },
+        "overrides": []
+      },
+      "gridPos": {"h": 6, "w": 6, "x": 6, "y": 20},
+      "id": 4,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": ["lastNotNull"],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": true,
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.3.0",
+      "targets": [
+        {
+          "editorMode": "code",
+          "expr": "playwright_selector_latency_ms{test=\"Latenztest-E-Antrag\"}",
+          "legendFormat": "E-Antrag",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "E-Antrag Status",
+      "type": "stat"
+    },
+    {
+      "datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"},
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "palette-classic"},
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "Vorhersage (ms)",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "barWidthFactor": 0.6,
+            "drawStyle": "line",
+            "fillOpacity": 20,
+            "gradientMode": "opacity",
+            "hideFrom": {"legend": false, "tooltip": false, "viz": false},
+            "insertNulls": false,
+            "lineInterpolation": "linear",
+            "lineStyle": {"dash": [10, 10], "fill": "dash"},
+            "lineWidth": 2,
+            "pointSize": 5,
+            "scaleDistribution": {"type": "linear"},
+            "showPoints": "never",
+            "spanNulls": false,
+            "stacking": {"group": "A", "mode": "none"},
+            "thresholdsStyle": {"mode": "off"}
+          },
+          "mappings": [],
+          "thresholds": {"mode": "absolute", "steps": [{"color": "green", "value": null}]},
+          "unit": "ms"
+        },
+        "overrides": []
+      },
+      "gridPos": {"h": 6, "w": 12, "x": 12, "y": 20},
+      "id": 5,
+      "options": {
+        "legend": {
+          "calcs": ["lastNotNull"],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {"mode": "single", "sort": "none"}
+      },
+      "targets": [
+        {
+          "editorMode": "code",
+          "expr": "predict_linear(playwright_latency{test=\"Latenztest-SRUV-HP\"}[24h], 4*3600)",
+          "legendFormat": "SRUV-HP Vorhersage +4h",
+          "range": true,
+          "refId": "A"
+        },
+        {
+          "editorMode": "code",
+          "expr": "predict_linear(playwright_selector_latency_ms{test=\"Latenztest-E-Antrag\"}[24h], 4*3600)",
+          "legendFormat": "E-Antrag Vorhersage +4h",
+          "range": true,
+          "refId": "B"
+        }
+      ],
+      "title": "Vorhersage: +4 Stunden (basierend auf 24h Trend)",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"},
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "palette-classic"},
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "Latenz (ms)",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "barWidthFactor": 0.6,
+            "drawStyle": "line",
+            "fillOpacity": 10,
+            "gradientMode": "none",
+            "hideFrom": {"legend": false, "tooltip": false, "viz": false},
+            "insertNulls": false,
+            "lineInterpolation": "smooth",
+            "lineWidth": 2,
+            "pointSize": 5,
+            "scaleDistribution": {"type": "linear"},
+            "showPoints": "never",
+            "spanNulls": false,
+            "stacking": {"group": "A", "mode": "none"},
+            "thresholdsStyle": {"mode": "off"}
+          },
+          "mappings": [],
+          "thresholds": {"mode": "absolute", "steps": [{"color": "green", "value": null}, {"color": "red", "value": 20000}]},
+          "unit": "ms"
+        },
+        "overrides": [
+          {
+            "matcher": {"id": "byRegexp", "options": ".*Aktuell.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 1},
+              {"id": "custom.fillOpacity", "value": 0},
+              {"id": "color", "value": {"fixedColor": "light-blue", "mode": "fixed"}}
+            ]
+          },
+          {
+            "matcher": {"id": "byRegexp", "options": ".*24h.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 2},
+              {"id": "color", "value": {"fixedColor": "green", "mode": "fixed"}}
+            ]
+          },
+          {
+            "matcher": {"id": "byRegexp", "options": ".*72h.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 2},
+              {"id": "color", "value": {"fixedColor": "yellow", "mode": "fixed"}}
+            ]
+          },
+          {
+            "matcher": {"id": "byRegexp", "options": ".*168h.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 3},
+              {"id": "color", "value": {"fixedColor": "orange", "mode": "fixed"}}
+            ]
+          }
+        ]
+      },
+      "gridPos": {"h": 8, "w": 12, "x": 0, "y": 20},
+      "id": 8,
+      "options": {
+        "legend": {
+          "calcs": ["lastNotNull", "mean"],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {"mode": "multi", "sort": "none"}
+      },
+      "targets": [
+        {
+          "editorMode": "code",
+          "expr": "playwright_selector_latency_ms{test=\"Alle Spalten Ansicht\"}",
+          "legendFormat": "Alle Spalten Aktuell",
+          "range": true,
+          "refId": "A"
+        },
+        {
+          "editorMode": "code",
+          "expr": "avg_over_time(playwright_selector_latency_ms{test=\"Alle Spalten Ansicht\"}[24h])",
+          "legendFormat": "Alle Spalten Ø 24h",
+          "range": true,
+          "refId": "B"
+        },
+        {
+          "editorMode": "code",
+          "expr": "avg_over_time(playwright_selector_latency_ms{test=\"Alle Spalten Ansicht\"}[72h])",
+          "legendFormat": "Alle Spalten Ø 72h",
+          "range": true,
+          "refId": "C"
+        },
+        {
+          "editorMode": "code",
+          "expr": "avg_over_time(playwright_selector_latency_ms{test=\"Alle Spalten Ansicht\"}[168h])",
+          "legendFormat": "Alle Spalten Ø 168h",
+          "range": true,
+          "refId": "D"
+        }
+      ],
+      "title": "Alle Spalten Ansicht: Trend",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"},
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "palette-classic"},
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "Latenz (ms)",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "barWidthFactor": 0.6,
+            "drawStyle": "line",
+            "fillOpacity": 10,
+            "gradientMode": "none",
+            "hideFrom": {"legend": false, "tooltip": false, "viz": false},
+            "insertNulls": false,
+            "lineInterpolation": "smooth",
+            "lineWidth": 2,
+            "pointSize": 5,
+            "scaleDistribution": {"type": "linear"},
+            "showPoints": "never",
+            "spanNulls": false,
+            "stacking": {"group": "A", "mode": "none"},
+            "thresholdsStyle": {"mode": "off"}
+          },
+          "mappings": [],
+          "thresholds": {"mode": "absolute", "steps": [{"color": "green", "value": null}, {"color": "red", "value": 20000}]},
+          "unit": "ms"
+        },
+        "overrides": [
+          {
+            "matcher": {"id": "byRegexp", "options": ".*Aktuell.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 1},
+              {"id": "custom.fillOpacity", "value": 0},
+              {"id": "color", "value": {"fixedColor": "light-blue", "mode": "fixed"}}
+            ]
+          },
+          {
+            "matcher": {"id": "byRegexp", "options": ".*24h.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 2},
+              {"id": "color", "value": {"fixedColor": "green", "mode": "fixed"}}
+            ]
+          },
+          {
+            "matcher": {"id": "byRegexp", "options": ".*72h.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 2},
+              {"id": "color", "value": {"fixedColor": "yellow", "mode": "fixed"}}
+            ]
+          },
+          {
+            "matcher": {"id": "byRegexp", "options": ".*168h.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 3},
+              {"id": "color", "value": {"fixedColor": "orange", "mode": "fixed"}}
+            ]
+          }
+        ]
+      },
+      "gridPos": {"h": 8, "w": 12, "x": 12, "y": 20},
+      "id": 9,
+      "options": {
+        "legend": {
+          "calcs": ["lastNotNull", "mean"],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {"mode": "multi", "sort": "none"}
+      },
+      "targets": [
+        {
+          "editorMode": "code",
+          "expr": "playwright_selector_latency_ms{test=\"Sachverhalt (Verfahrensakte) Ansicht\"}",
+          "legendFormat": "Sachverhalt Aktuell",
+          "range": true,
+          "refId": "A"
+        },
+        {
+          "editorMode": "code",
+          "expr": "avg_over_time(playwright_selector_latency_ms{test=\"Sachverhalt (Verfahrensakte) Ansicht\"}[24h])",
+          "legendFormat": "Sachverhalt Ø 24h",
+          "range": true,
+          "refId": "B"
+        },
+        {
+          "editorMode": "code",
+          "expr": "avg_over_time(playwright_selector_latency_ms{test=\"Sachverhalt (Verfahrensakte) Ansicht\"}[72h])",
+          "legendFormat": "Sachverhalt Ø 72h",
+          "range": true,
+          "refId": "C"
+        },
+        {
+          "editorMode": "code",
+          "expr": "avg_over_time(playwright_selector_latency_ms{test=\"Sachverhalt (Verfahrensakte) Ansicht\"}[168h])",
+          "legendFormat": "Sachverhalt Ø 168h",
+          "range": true,
+          "refId": "D"
+        }
+      ],
+      "title": "Sachverhalt (Verfahrensakte) Ansicht: Trend",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"},
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "palette-classic"},
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "Latenz (ms)",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "barWidthFactor": 0.6,
+            "drawStyle": "line",
+            "fillOpacity": 10,
+            "gradientMode": "none",
+            "hideFrom": {"legend": false, "tooltip": false, "viz": false},
+            "insertNulls": false,
+            "lineInterpolation": "smooth",
+            "lineWidth": 2,
+            "pointSize": 5,
+            "scaleDistribution": {"type": "linear"},
+            "showPoints": "never",
+            "spanNulls": false,
+            "stacking": {"group": "A", "mode": "none"},
+            "thresholdsStyle": {"mode": "off"}
+          },
+          "mappings": [],
+          "thresholds": {"mode": "absolute", "steps": [{"color": "green", "value": null}, {"color": "red", "value": 20000}]},
+          "unit": "ms"
+        },
+        "overrides": [
+          {
+            "matcher": {"id": "byRegexp", "options": ".*Aktuell.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 1},
+              {"id": "custom.fillOpacity", "value": 0},
+              {"id": "color", "value": {"fixedColor": "light-blue", "mode": "fixed"}}
+            ]
+          },
+          {
+            "matcher": {"id": "byRegexp", "options": ".*24h.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 2},
+              {"id": "color", "value": {"fixedColor": "green", "mode": "fixed"}}
+            ]
+          },
+          {
+            "matcher": {"id": "byRegexp", "options": ".*72h.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 2},
+              {"id": "color", "value": {"fixedColor": "yellow", "mode": "fixed"}}
+            ]
+          },
+          {
+            "matcher": {"id": "byRegexp", "options": ".*168h.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 3},
+              {"id": "color", "value": {"fixedColor": "orange", "mode": "fixed"}}
+            ]
+          }
+        ]
+      },
+      "gridPos": {"h": 8, "w": 12, "x": 0, "y": 28},
+      "id": 10,
+      "options": {
+        "legend": {
+          "calcs": ["lastNotNull", "mean"],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {"mode": "multi", "sort": "none"}
+      },
+      "targets": [
+        {
+          "editorMode": "code",
+          "expr": "playwright_selector_latency_ms{test=\"Telefonie Ansicht\"}",
+          "legendFormat": "Telefonie Aktuell",
+          "range": true,
+          "refId": "A"
+        },
+        {
+          "editorMode": "code",
+          "expr": "avg_over_time(playwright_selector_latency_ms{test=\"Telefonie Ansicht\"}[24h])",
+          "legendFormat": "Telefonie Ø 24h",
+          "range": true,
+          "refId": "B"
+        },
+        {
+          "editorMode": "code",
+          "expr": "avg_over_time(playwright_selector_latency_ms{test=\"Telefonie Ansicht\"}[72h])",
+          "legendFormat": "Telefonie Ø 72h",
+          "range": true,
+          "refId": "C"
+        },
+        {
+          "editorMode": "code",
+          "expr": "avg_over_time(playwright_selector_latency_ms{test=\"Telefonie Ansicht\"}[168h])",
+          "legendFormat": "Telefonie Ø 168h",
+          "range": true,
+          "refId": "D"
+        }
+      ],
+      "title": "Telefonie Ansicht: Trend",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"},
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "palette-classic"},
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "Latenz (ms)",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "barWidthFactor": 0.6,
+            "drawStyle": "line",
+            "fillOpacity": 10,
+            "gradientMode": "none",
+            "hideFrom": {"legend": false, "tooltip": false, "viz": false},
+            "insertNulls": false,
+            "lineInterpolation": "smooth",
+            "lineWidth": 2,
+            "pointSize": 5,
+            "scaleDistribution": {"type": "linear"},
+            "showPoints": "never",
+            "spanNulls": false,
+            "stacking": {"group": "A", "mode": "none"},
+            "thresholdsStyle": {"mode": "off"}
+          },
+          "mappings": [],
+          "thresholds": {"mode": "absolute", "steps": [{"color": "green", "value": null}, {"color": "red", "value": 20000}]},
+          "unit": "ms"
+        },
+        "overrides": [
+          {
+            "matcher": {"id": "byRegexp", "options": ".*Aktuell.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 1},
+              {"id": "custom.fillOpacity", "value": 0},
+              {"id": "color", "value": {"fixedColor": "light-blue", "mode": "fixed"}}
+            ]
+          },
+          {
+            "matcher": {"id": "byRegexp", "options": ".*24h.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 2},
+              {"id": "color", "value": {"fixedColor": "green", "mode": "fixed"}}
+            ]
+          },
+          {
+            "matcher": {"id": "byRegexp", "options": ".*72h.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 2},
+              {"id": "color", "value": {"fixedColor": "yellow", "mode": "fixed"}}
+            ]
+          },
+          {
+            "matcher": {"id": "byRegexp", "options": ".*168h.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 3},
+              {"id": "color", "value": {"fixedColor": "orange", "mode": "fixed"}}
+            ]
+          }
+        ]
+      },
+      "gridPos": {"h": 8, "w": 12, "x": 12, "y": 28},
+      "id": 11,
+      "options": {
+        "legend": {
+          "calcs": ["lastNotNull", "mean"],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {"mode": "multi", "sort": "none"}
+      },
+      "targets": [
+        {
+          "editorMode": "code",
+          "expr": "playwright_selector_latency_ms{test=\"Falladmin Dashboard\"}",
+          "legendFormat": "Falladmin Aktuell",
+          "range": true,
+          "refId": "A"
+        },
+        {
+          "editorMode": "code",
+          "expr": "avg_over_time(playwright_selector_latency_ms{test=\"Falladmin Dashboard\"}[24h])",
+          "legendFormat": "Falladmin Ø 24h",
+          "range": true,
+          "refId": "B"
+        },
+        {
+          "editorMode": "code",
+          "expr": "avg_over_time(playwright_selector_latency_ms{test=\"Falladmin Dashboard\"}[72h])",
+          "legendFormat": "Falladmin Ø 72h",
+          "range": true,
+          "refId": "C"
+        },
+        {
+          "editorMode": "code",
+          "expr": "avg_over_time(playwright_selector_latency_ms{test=\"Falladmin Dashboard\"}[168h])",
+          "legendFormat": "Falladmin Ø 168h",
+          "range": true,
+          "refId": "D"
+        }
+      ],
+      "title": "Falladmin Dashboard: Trend",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"},
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "palette-classic"},
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "Latenz (ms)",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "barWidthFactor": 0.6,
+            "drawStyle": "line",
+            "fillOpacity": 10,
+            "gradientMode": "none",
+            "hideFrom": {"legend": false, "tooltip": false, "viz": false},
+            "insertNulls": false,
+            "lineInterpolation": "smooth",
+            "lineWidth": 2,
+            "pointSize": 5,
+            "scaleDistribution": {"type": "linear"},
+            "showPoints": "never",
+            "spanNulls": false,
+            "stacking": {"group": "A", "mode": "none"},
+            "thresholdsStyle": {"mode": "off"}
+          },
+          "mappings": [],
+          "thresholds": {"mode": "absolute", "steps": [{"color": "green", "value": null}, {"color": "red", "value": 20000}]},
+          "unit": "ms"
+        },
+        "overrides": [
+          {
+            "matcher": {"id": "byRegexp", "options": ".*Aktuell.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 1},
+              {"id": "custom.fillOpacity", "value": 0},
+              {"id": "color", "value": {"fixedColor": "light-blue", "mode": "fixed"}}
+            ]
+          },
+          {
+            "matcher": {"id": "byRegexp", "options": ".*24h.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 2},
+              {"id": "color", "value": {"fixedColor": "green", "mode": "fixed"}}
+            ]
+          },
+          {
+            "matcher": {"id": "byRegexp", "options": ".*72h.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 2},
+              {"id": "color", "value": {"fixedColor": "yellow", "mode": "fixed"}}
+            ]
+          },
+          {
+            "matcher": {"id": "byRegexp", "options": ".*168h.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 3},
+              {"id": "color", "value": {"fixedColor": "orange", "mode": "fixed"}}
+            ]
+          }
+        ]
+      },
+      "gridPos": {"h": 8, "w": 12, "x": 0, "y": 36},
+      "id": 12,
+      "options": {
+        "legend": {
+          "calcs": ["lastNotNull", "mean"],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {"mode": "multi", "sort": "none"}
+      },
+      "targets": [
+        {
+          "editorMode": "code",
+          "expr": "playwright_latency{test=\"Latenztest-EaSe-Dashboard\"}",
+          "legendFormat": "EaSe Aktuell",
+          "range": true,
+          "refId": "A"
+        },
+        {
+          "editorMode": "code",
+          "expr": "avg_over_time(playwright_latency{test=\"Latenztest-EaSe-Dashboard\"}[24h])",
+          "legendFormat": "EaSe Ø 24h",
+          "range": true,
+          "refId": "B"
+        },
+        {
+          "editorMode": "code",
+          "expr": "avg_over_time(playwright_latency{test=\"Latenztest-EaSe-Dashboard\"}[72h])",
+          "legendFormat": "EaSe Ø 72h",
+          "range": true,
+          "refId": "C"
+        },
+        {
+          "editorMode": "code",
+          "expr": "avg_over_time(playwright_latency{test=\"Latenztest-EaSe-Dashboard\"}[168h])",
+          "legendFormat": "EaSe Ø 168h",
+          "range": true,
+          "refId": "D"
+        }
+      ],
+      "title": "EaSe-Dashboard: Trend (Gesamtlatenz)",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"},
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "palette-classic"},
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "Latenz (ms)",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "barWidthFactor": 0.6,
+            "drawStyle": "line",
+            "fillOpacity": 10,
+            "gradientMode": "none",
+            "hideFrom": {"legend": false, "tooltip": false, "viz": false},
+            "insertNulls": false,
+            "lineInterpolation": "smooth",
+            "lineWidth": 2,
+            "pointSize": 5,
+            "scaleDistribution": {"type": "linear"},
+            "showPoints": "never",
+            "spanNulls": false,
+            "stacking": {"group": "A", "mode": "none"},
+            "thresholdsStyle": {"mode": "off"}
+          },
+          "mappings": [],
+          "thresholds": {"mode": "absolute", "steps": [{"color": "green", "value": null}, {"color": "red", "value": 20000}]},
+          "unit": "ms"
+        },
+        "overrides": [
+          {
+            "matcher": {"id": "byRegexp", "options": ".*Aktuell.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 1},
+              {"id": "custom.fillOpacity", "value": 0},
+              {"id": "color", "value": {"fixedColor": "light-blue", "mode": "fixed"}}
+            ]
+          },
+          {
+            "matcher": {"id": "byRegexp", "options": ".*24h.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 2},
+              {"id": "color", "value": {"fixedColor": "green", "mode": "fixed"}}
+            ]
+          },
+          {
+            "matcher": {"id": "byRegexp", "options": ".*72h.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 2},
+              {"id": "color", "value": {"fixedColor": "yellow", "mode": "fixed"}}
+            ]
+          },
+          {
+            "matcher": {"id": "byRegexp", "options": ".*168h.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 3},
+              {"id": "color", "value": {"fixedColor": "orange", "mode": "fixed"}}
+            ]
+          }
+        ]
+      },
+      "gridPos": {"h": 8, "w": 12, "x": 12, "y": 36},
+      "id": 13,
+      "options": {
+        "legend": {
+          "calcs": ["lastNotNull", "mean"],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {"mode": "multi", "sort": "none"}
+      },
+      "targets": [
+        {
+          "editorMode": "code",
+          "expr": "playwright_latency{test=\"Latenztest-PDF-oeffnen\"}",
+          "legendFormat": "PDF Aktuell",
+          "range": true,
+          "refId": "A"
+        },
+        {
+          "editorMode": "code",
+          "expr": "avg_over_time(playwright_latency{test=\"Latenztest-PDF-oeffnen\"}[24h])",
+          "legendFormat": "PDF Ø 24h",
+          "range": true,
+          "refId": "B"
+        },
+        {
+          "editorMode": "code",
+          "expr": "avg_over_time(playwright_latency{test=\"Latenztest-PDF-oeffnen\"}[72h])",
+          "legendFormat": "PDF Ø 72h",
+          "range": true,
+          "refId": "C"
+        },
+        {
+          "editorMode": "code",
+          "expr": "avg_over_time(playwright_latency{test=\"Latenztest-PDF-oeffnen\"}[168h])",
+          "legendFormat": "PDF Ø 168h",
+          "range": true,
+          "refId": "D"
+        }
+      ],
+      "title": "PDF-Öffnen: Trend (Gesamtlatenz)",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"},
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "palette-classic"},
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "Latenz (ms)",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "barWidthFactor": 0.6,
+            "drawStyle": "line",
+            "fillOpacity": 10,
+            "gradientMode": "none",
+            "hideFrom": {"legend": false, "tooltip": false, "viz": false},
+            "insertNulls": false,
+            "lineInterpolation": "smooth",
+            "lineWidth": 2,
+            "pointSize": 5,
+            "scaleDistribution": {"type": "linear"},
+            "showPoints": "never",
+            "spanNulls": false,
+            "stacking": {"group": "A", "mode": "none"},
+            "thresholdsStyle": {"mode": "off"}
+          },
+          "mappings": [],
+          "thresholds": {"mode": "absolute", "steps": [{"color": "green", "value": null}, {"color": "red", "value": 20000}]},
+          "unit": "ms"
+        },
+        "overrides": [
+          {
+            "matcher": {"id": "byRegexp", "options": ".*Aktuell.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 1},
+              {"id": "custom.fillOpacity", "value": 0},
+              {"id": "color", "value": {"fixedColor": "light-blue", "mode": "fixed"}}
+            ]
+          },
+          {
+            "matcher": {"id": "byRegexp", "options": ".*24h.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 2},
+              {"id": "color", "value": {"fixedColor": "green", "mode": "fixed"}}
+            ]
+          },
+          {
+            "matcher": {"id": "byRegexp", "options": ".*72h.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 2},
+              {"id": "color", "value": {"fixedColor": "yellow", "mode": "fixed"}}
+            ]
+          },
+          {
+            "matcher": {"id": "byRegexp", "options": ".*168h.*"},
+            "properties": [
+              {"id": "custom.lineWidth", "value": 3},
+              {"id": "color", "value": {"fixedColor": "orange", "mode": "fixed"}}
+            ]
+          }
+        ]
+      },
+      "gridPos": {"h": 8, "w": 12, "x": 0, "y": 44},
+      "id": 14,
+      "options": {
+        "legend": {
+          "calcs": ["lastNotNull", "mean"],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {"mode": "multi", "sort": "none"}
+      },
+      "targets": [
+        {
+          "editorMode": "code",
+          "expr": "playwright_selector_latency_ms{test=\"Latenzzeit-Schli-Dashboard\"}",
+          "legendFormat": "Schli Aktuell",
+          "range": true,
+          "refId": "A"
+        },
+        {
+          "editorMode": "code",
+          "expr": "avg_over_time(playwright_selector_latency_ms{test=\"Latenzzeit-Schli-Dashboard\"}[24h])",
+          "legendFormat": "Schli Ø 24h",
+          "range": true,
+          "refId": "B"
+        },
+        {
+          "editorMode": "code",
+          "expr": "avg_over_time(playwright_selector_latency_ms{test=\"Latenzzeit-Schli-Dashboard\"}[72h])",
+          "legendFormat": "Schli Ø 72h",
+          "range": true,
+          "refId": "C"
+        },
+        {
+          "editorMode": "code",
+          "expr": "avg_over_time(playwright_selector_latency_ms{test=\"Latenzzeit-Schli-Dashboard\"}[168h])",
+          "legendFormat": "Schli Ø 168h",
+          "range": true,
+          "refId": "D"
+        }
+      ],
+      "title": "Schli-Dashboard: Trend",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"},
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "thresholds"},
+          "mappings": [],
+          "thresholds": {
+            "mode": "percentage",
+            "steps": [
+              {"color": "green", "value": null},
+              {"color": "yellow", "value": 10},
+              {"color": "red", "value": 25}
+            ]
+          },
+          "unit": "percent"
+        },
+        "overrides": []
+      },
+      "gridPos": {"h": 6, "w": 12, "x": 0, "y": 52},
+      "id": 6,
+      "options": {
+        "displayMode": "gradient",
+        "maxVizHeight": 300,
+        "minVizHeight": 16,
+        "minVizWidth": 8,
+        "namePlacement": "auto",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": ["lastNotNull"],
+          "fields": "",
+          "values": false
+        },
+        "showUnfilled": true,
+        "sizing": "auto",
+        "valueMode": "color"
+      },
+      "pluginVersion": "12.3.0",
+      "targets": [
+        {
+          "editorMode": "code",
+          "expr": "((playwright_latency{test=\"Latenztest-SRUV-HP\"} - (playwright_latency{test=\"Latenztest-SRUV-HP\"} offset 168h)) / (playwright_latency{test=\"Latenztest-SRUV-HP\"} offset 168h)) * 100",
+          "legendFormat": "SRUV-HP vs. Vorwoche",
+          "range": true,
+          "refId": "A"
+        },
+        {
+          "editorMode": "code",
+          "expr": "((playwright_selector_latency_ms{test=\"Latenztest-E-Antrag\"} - (playwright_selector_latency_ms{test=\"Latenztest-E-Antrag\"} offset 168h)) / (playwright_selector_latency_ms{test=\"Latenztest-E-Antrag\"} offset 168h)) * 100",
+          "legendFormat": "E-Antrag vs. Vorwoche",
+          "range": true,
+          "refId": "B"
+        }
+      ],
+      "title": "Wochenveränderung (%)",
+      "type": "bargauge"
+    },
+    {
+      "datasource": {"type": "prometheus", "uid": "ff7dib7iujpxcf"},
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "thresholds"},
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {"color": "green", "value": null},
+              {"color": "yellow", "value": 100},
+              {"color": "red", "value": 200}
+            ]
+          },
+          "unit": "ms"
+        },
+        "overrides": []
+      },
+      "gridPos": {"h": 6, "w": 12, "x": 12, "y": 26},
+      "id": 7,
+      "options": {
+        "displayMode": "gradient",
+        "maxVizHeight": 300,
+        "minVizHeight": 16,
+        "minVizWidth": 8,
+        "namePlacement": "auto",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": ["lastNotNull"],
+          "fields": "",
+          "values": false
+        },
+        "showUnfilled": true,
+        "sizing": "auto",
+        "valueMode": "color"
+      },
+      "pluginVersion": "12.3.0",
+      "targets": [
+        {
+          "editorMode": "code",
+          "expr": "playwright_latency{test=\"Latenztest-SRUV-HP\"} - (playwright_latency{test=\"Latenztest-SRUV-HP\"} offset 168h)",
+          "legendFormat": "SRUV-HP Delta",
+          "range": true,
+          "refId": "A"
+        },
+        {
+          "editorMode": "code",
+          "expr": "playwright_selector_latency_ms{test=\"Latenztest-E-Antrag\"} - (playwright_selector_latency_ms{test=\"Latenztest-E-Antrag\"} offset 168h)",
+          "legendFormat": "E-Antrag Delta",
+          "range": true,
+          "refId": "B"
+        }
+      ],
+      "title": "Absolute Änderung zur Vorwoche (ms)",
+      "type": "bargauge"
+    }
+  ],
+  "refresh": "1m",
+  "schemaVersion": 42,
+  "tags": ["trends", "latenz", "sruv"],
+  "templating": {"list": []},
+  "time": {"from": "now-7d", "to": "now"},
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "SRUV Trends",
+  "uid": "sruv-trends-uuid",
+  "version": 1
+}

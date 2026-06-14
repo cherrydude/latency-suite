@@ -1,0 +1,635 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\MartenKirschenhofer\\Projekte\\PlaywrightSoC_optimized\\server\\src\\tests\\playwright.config.mjs",
+    "rootDir": "C:/Users/MartenKirschenhofer/Projekte/PlaywrightSoC_optimized/server/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": "C:\\Users\\MartenKirschenhofer\\Projekte\\PlaywrightSoC_optimized\\server\\src\\helpers\\global-setup.ts",
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "C:\\Users\\MartenKirschenhofer\\Projekte\\PlaywrightSoC_optimized\\server\\src\\tests\\test-results\\playwright-report_2026-05-29_09-08-06.json"
+        }
+      ],
+      [
+        "C:\\Users\\MartenKirschenhofer\\Projekte\\PlaywrightSoC_optimized\\server\\src\\tests\\playwright-metrics-reporter.js",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/MartenKirschenhofer/Projekte/PlaywrightSoC_optimized/server/src/tests/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Google Chrome",
+        "name": "Google Chrome",
+        "testDir": "C:/Users/MartenKirschenhofer/Projekte/PlaywrightSoC_optimized/server/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/MartenKirschenhofer/Projekte/PlaywrightSoC_optimized/server/src/tests/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Microsoft Edge",
+        "name": "Microsoft Edge",
+        "testDir": "C:/Users/MartenKirschenhofer/Projekte/PlaywrightSoC_optimized/server/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.57.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "latency-suite.Optimized.spec.ts",
+      "file": "latency-suite.Optimized.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "hilex iSheet: Datenbank",
+          "file": "latency-suite.Optimized.spec.ts",
+          "line": 37,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Datenbank: Alle Spalten Ansicht",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 30102,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-29T07:08:07.991Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "selector_latency_ms",
+                          "contentType": "text/plain",
+                          "path": "C:\\Users\\MartenKirschenhofer\\Projekte\\PlaywrightSoC_optimized\\server\\src\\tests\\test-results\\latency-suite.Optimized-hi-3ae0d-enbank-Alle-Spalten-Ansicht-Google-Chrome\\attachments\\selector-latency-ms-256b53426be7f82813d6368227124beab4716e1e.txt"
+                        },
+                        {
+                          "name": "playwright_perf_metrics",
+                          "contentType": "application/json",
+                          "body": "ewogICJ0ZXN0TmFtZSI6ICJEYXRlbmJhbms6IEFsbGUgU3BhbHRlbiBBbnNpY2h0IiwKICAiYnJvd3NlciI6ICJHb29nbGUgQ2hyb21lIiwKICAidml0YWxzIjogewogICAgImZjcCI6IDAsCiAgICAibGNwIjogNDYwMCwKICAgICJjbHMiOiAwCiAgfSwKICAicmVzb3VyY2VzIjogewogICAgImNvdW50IjogMTQyLAogICAgInRvdGFsQnl0ZXMiOiA1MDA5Mjc4CiAgfSwKICAibmF2aWdhdGlvbiI6IHsKICAgICJ0dGZiIjogNzgwLjM5OTk5OTk3NjE1ODEsCiAgICAiZG9tQ29udGVudExvYWRlZCI6IDQ2MjYuOTAwMDAwMDk1MzY3LAogICAgImxvYWRFdmVudCI6IDY0ODAuNjAwMDAwMDIzODQyCiAgfQp9"
+                        },
+                        {
+                          "name": "har",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\MartenKirschenhofer\\Projekte\\PlaywrightSoC_optimized\\server\\src\\tests\\test-results\\latency-suite.Optimized-hi-3ae0d-enbank-Alle-Spalten-Ansicht-Google-Chrome\\attachments\\har-593ae984b6f67b23e1b8e0a367bc32b5dedbba46.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Microsoft Edge",
+                  "projectName": "Microsoft Edge",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 19151,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-29T07:09:50.387Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "selector_latency_ms",
+                          "contentType": "text/plain",
+                          "path": "C:\\Users\\MartenKirschenhofer\\Projekte\\PlaywrightSoC_optimized\\server\\src\\tests\\test-results\\latency-suite.Optimized-hi-3ae0d-enbank-Alle-Spalten-Ansicht-Microsoft-Edge\\attachments\\selector-latency-ms-cd8a67771c6700c9ca8584c10c59aabb897a778a.txt"
+                        },
+                        {
+                          "name": "playwright_perf_metrics",
+                          "contentType": "application/json",
+                          "body": "ewogICJ0ZXN0TmFtZSI6ICJEYXRlbmJhbms6IEFsbGUgU3BhbHRlbiBBbnNpY2h0IiwKICAiYnJvd3NlciI6ICJNaWNyb3NvZnQgRWRnZSIsCiAgInZpdGFscyI6IHsKICAgICJmY3AiOiAwLAogICAgImxjcCI6IDI1MDAsCiAgICAiY2xzIjogMAogIH0sCiAgInJlc291cmNlcyI6IHsKICAgICJjb3VudCI6IDE0MiwKICAgICJ0b3RhbEJ5dGVzIjogNTAwOTQwMgogIH0sCiAgIm5hdmlnYXRpb24iOiB7CiAgICAidHRmYiI6IDg1OC43OTk5OTk5NTIzMTYzLAogICAgImRvbUNvbnRlbnRMb2FkZWQiOiAyNTEyLjM5OTk5OTk3NjE1OCwKICAgICJsb2FkRXZlbnQiOiAzNTExLjg5OTk5OTk3NjE1OAogIH0KfQ=="
+                        },
+                        {
+                          "name": "har",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\MartenKirschenhofer\\Projekte\\PlaywrightSoC_optimized\\server\\src\\tests\\test-results\\latency-suite.Optimized-hi-3ae0d-enbank-Alle-Spalten-Ansicht-Microsoft-Edge\\attachments\\har-2e3a9c2c860077c71e1d4a4f2f6f2ef7dd4af083.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d985a3478a99edb9efb3-16e22e0763761fbb37ee",
+              "file": "latency-suite.Optimized.spec.ts",
+              "line": 43,
+              "column": 3
+            },
+            {
+              "title": "Datenbank: Sachverhalt Ansicht",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 18777,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-29T07:08:38.458Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "selector_latency_ms",
+                          "contentType": "text/plain",
+                          "path": "C:\\Users\\MartenKirschenhofer\\Projekte\\PlaywrightSoC_optimized\\server\\src\\tests\\test-results\\latency-suite.Optimized-hi-85efb-tenbank-Sachverhalt-Ansicht-Google-Chrome\\attachments\\selector-latency-ms-dbff50345c3b0c0349b3694cf22f233a10877df4.txt"
+                        },
+                        {
+                          "name": "playwright_perf_metrics",
+                          "contentType": "application/json",
+                          "body": "ewogICJ0ZXN0TmFtZSI6ICJEYXRlbmJhbms6IFNhY2h2ZXJoYWx0IEFuc2ljaHQiLAogICJicm93c2VyIjogIkdvb2dsZSBDaHJvbWUiLAogICJ2aXRhbHMiOiB7CiAgICAiZmNwIjogMCwKICAgICJsY3AiOiAyNjQ4LAogICAgImNscyI6IDAKICB9LAogICJyZXNvdXJjZXMiOiB7CiAgICAiY291bnQiOiAxNDIsCiAgICAidG90YWxCeXRlcyI6IDQ2NDA4MzQKICB9LAogICJuYXZpZ2F0aW9uIjogewogICAgInR0ZmIiOiA2OTAuNSwKICAgICJkb21Db250ZW50TG9hZGVkIjogMjc1Mi4zMDAwMDAwNzE1MjU2LAogICAgImxvYWRFdmVudCI6IDM2MzMuMzAwMDAwMDcxNTI1NgogIH0KfQ=="
+                        },
+                        {
+                          "name": "har",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\MartenKirschenhofer\\Projekte\\PlaywrightSoC_optimized\\server\\src\\tests\\test-results\\latency-suite.Optimized-hi-85efb-tenbank-Sachverhalt-Ansicht-Google-Chrome\\attachments\\har-247abb04016d98e74ec9e72be0de910b4ea8487a.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Microsoft Edge",
+                  "projectName": "Microsoft Edge",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 20898,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-29T07:10:09.895Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "selector_latency_ms",
+                          "contentType": "text/plain",
+                          "path": "C:\\Users\\MartenKirschenhofer\\Projekte\\PlaywrightSoC_optimized\\server\\src\\tests\\test-results\\latency-suite.Optimized-hi-85efb-tenbank-Sachverhalt-Ansicht-Microsoft-Edge\\attachments\\selector-latency-ms-ebdd2ed5f2fbda869ae046ccab7365108b1242c2.txt"
+                        },
+                        {
+                          "name": "playwright_perf_metrics",
+                          "contentType": "application/json",
+                          "body": "ewogICJ0ZXN0TmFtZSI6ICJEYXRlbmJhbms6IFNhY2h2ZXJoYWx0IEFuc2ljaHQiLAogICJicm93c2VyIjogIk1pY3Jvc29mdCBFZGdlIiwKICAidml0YWxzIjogewogICAgImZjcCI6IDAsCiAgICAibGNwIjogNTU5NiwKICAgICJjbHMiOiAwCiAgfSwKICAicmVzb3VyY2VzIjogewogICAgImNvdW50IjogMTQyLAogICAgInRvdGFsQnl0ZXMiOiA0NjQxMDk5CiAgfSwKICAibmF2aWdhdGlvbiI6IHsKICAgICJ0dGZiIjogOTIwLjIwMDAwMDA0NzY4MzcsCiAgICAiZG9tQ29udGVudExvYWRlZCI6IDU2NzUuNSwKICAgICJsb2FkRXZlbnQiOiA2Njk0LjUKICB9Cn0="
+                        },
+                        {
+                          "name": "har",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\MartenKirschenhofer\\Projekte\\PlaywrightSoC_optimized\\server\\src\\tests\\test-results\\latency-suite.Optimized-hi-85efb-tenbank-Sachverhalt-Ansicht-Microsoft-Edge\\attachments\\har-13290b319043c9d72e0d28df02b1520e0edf524d.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d985a3478a99edb9efb3-374dd5a2bb65ffa0e102",
+              "file": "latency-suite.Optimized.spec.ts",
+              "line": 78,
+              "column": 3
+            },
+            {
+              "title": "Datenbank: Telefonie Ansicht",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 16131,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-29T07:08:57.260Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "selector_latency_ms",
+                          "contentType": "text/plain",
+                          "path": "C:\\Users\\MartenKirschenhofer\\Projekte\\PlaywrightSoC_optimized\\server\\src\\tests\\test-results\\latency-suite.Optimized-hi-7c46b-Datenbank-Telefonie-Ansicht-Google-Chrome\\attachments\\selector-latency-ms-e286b4655b774e814ed918062c0bebcbc193c381.txt"
+                        },
+                        {
+                          "name": "playwright_perf_metrics",
+                          "contentType": "application/json",
+                          "body": "ewogICJ0ZXN0TmFtZSI6ICJEYXRlbmJhbms6IFRlbGVmb25pZSBBbnNpY2h0IiwKICAiYnJvd3NlciI6ICJHb29nbGUgQ2hyb21lIiwKICAidml0YWxzIjogewogICAgImZjcCI6IDAsCiAgICAibGNwIjogMjgxMiwKICAgICJjbHMiOiAwCiAgfSwKICAicmVzb3VyY2VzIjogewogICAgImNvdW50IjogMTQyLAogICAgInRvdGFsQnl0ZXMiOiA0NTE1MTg3CiAgfSwKICAibmF2aWdhdGlvbiI6IHsKICAgICJ0dGZiIjogODgzLjYwMDAwMDAyMzg0MTksCiAgICAiZG9tQ29udGVudExvYWRlZCI6IDI4OTMuMzk5OTk5OTc2MTU4LAogICAgImxvYWRFdmVudCI6IDQwNjIuNjk5OTk5OTI4NDc0NAogIH0KfQ=="
+                        },
+                        {
+                          "name": "har",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\MartenKirschenhofer\\Projekte\\PlaywrightSoC_optimized\\server\\src\\tests\\test-results\\latency-suite.Optimized-hi-7c46b-Datenbank-Telefonie-Ansicht-Google-Chrome\\attachments\\har-0348af6324db42925914db1758cc26beff2abeee.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Microsoft Edge",
+                  "projectName": "Microsoft Edge",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 15571,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-29T07:10:30.819Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "selector_latency_ms",
+                          "contentType": "text/plain",
+                          "path": "C:\\Users\\MartenKirschenhofer\\Projekte\\PlaywrightSoC_optimized\\server\\src\\tests\\test-results\\latency-suite.Optimized-hi-7c46b-Datenbank-Telefonie-Ansicht-Microsoft-Edge\\attachments\\selector-latency-ms-dc39adb144835d70b62e328f99f5d7b825a38663.txt"
+                        },
+                        {
+                          "name": "playwright_perf_metrics",
+                          "contentType": "application/json",
+                          "body": "ewogICJ0ZXN0TmFtZSI6ICJEYXRlbmJhbms6IFRlbGVmb25pZSBBbnNpY2h0IiwKICAiYnJvd3NlciI6ICJNaWNyb3NvZnQgRWRnZSIsCiAgInZpdGFscyI6IHsKICAgICJmY3AiOiAwLAogICAgImxjcCI6IDMyNjAsCiAgICAiY2xzIjogMAogIH0sCiAgInJlc291cmNlcyI6IHsKICAgICJjb3VudCI6IDE0MiwKICAgICJ0b3RhbEJ5dGVzIjogNDUxNTI0NQogIH0sCiAgIm5hdmlnYXRpb24iOiB7CiAgICAidHRmYiI6IDE1MDUuMjk5OTk5OTUyMzE2MywKICAgICJkb21Db250ZW50TG9hZGVkIjogMzM0Ni42MDAwMDAwMjM4NDIsCiAgICAibG9hZEV2ZW50IjogNDMxNi45MDAwMDAwOTUzNjcKICB9Cn0="
+                        },
+                        {
+                          "name": "har",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\MartenKirschenhofer\\Projekte\\PlaywrightSoC_optimized\\server\\src\\tests\\test-results\\latency-suite.Optimized-hi-7c46b-Datenbank-Telefonie-Ansicht-Microsoft-Edge\\attachments\\har-0941c551275995bee47641d3ca518cb6c9026c4d.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d985a3478a99edb9efb3-87cfc37c033e9409b012",
+              "file": "latency-suite.Optimized.spec.ts",
+              "line": 111,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "hilex iSheet: PerformanceTest",
+          "file": "latency-suite.Optimized.spec.ts",
+          "line": 146,
+          "column": 6,
+          "specs": [
+            {
+              "title": "PerformanceTest: Alle Spalten Ansicht",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 15145,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-29T07:09:13.418Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "selector_latency_ms",
+                          "contentType": "text/plain",
+                          "path": "C:\\Users\\MartenKirschenhofer\\Projekte\\PlaywrightSoC_optimized\\server\\src\\tests\\test-results\\latency-suite.Optimized-hi-86330-ceTest-Alle-Spalten-Ansicht-Google-Chrome\\attachments\\selector-latency-ms-7f95ce82caf4f6cb56bb2d90db73cf55c09869bf.txt"
+                        },
+                        {
+                          "name": "playwright_perf_metrics",
+                          "contentType": "application/json",
+                          "body": "ewogICJ0ZXN0TmFtZSI6ICJQZXJmb3JtYW5jZVRlc3Q6IEFsbGUgU3BhbHRlbiBBbnNpY2h0IiwKICAiYnJvd3NlciI6ICJHb29nbGUgQ2hyb21lIiwKICAidml0YWxzIjogewogICAgImZjcCI6IDAsCiAgICAibGNwIjogMjc3NiwKICAgICJjbHMiOiAwCiAgfSwKICAicmVzb3VyY2VzIjogewogICAgImNvdW50IjogMTQyLAogICAgInRvdGFsQnl0ZXMiOiA0NzM4NTc2CiAgfSwKICAibmF2aWdhdGlvbiI6IHsKICAgICJ0dGZiIjogNzA4LjM5OTk5OTk3NjE1ODEsCiAgICAiZG9tQ29udGVudExvYWRlZCI6IDI4NDcuNTk5OTk5OTA0NjMyNiwKICAgICJsb2FkRXZlbnQiOiAzODYxLjA5OTk5OTkwNDYzMjYKICB9Cn0="
+                        },
+                        {
+                          "name": "har",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\MartenKirschenhofer\\Projekte\\PlaywrightSoC_optimized\\server\\src\\tests\\test-results\\latency-suite.Optimized-hi-86330-ceTest-Alle-Spalten-Ansicht-Google-Chrome\\attachments\\har-59a4b2978d822621796cc30b2e95aee545e5c760.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Microsoft Edge",
+                  "projectName": "Microsoft Edge",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 13249,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-29T07:10:46.408Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "selector_latency_ms",
+                          "contentType": "text/plain",
+                          "path": "C:\\Users\\MartenKirschenhofer\\Projekte\\PlaywrightSoC_optimized\\server\\src\\tests\\test-results\\latency-suite.Optimized-hi-86330-ceTest-Alle-Spalten-Ansicht-Microsoft-Edge\\attachments\\selector-latency-ms-b6f62982cbe9b68e61a610ec15969aa99abc46bb.txt"
+                        },
+                        {
+                          "name": "playwright_perf_metrics",
+                          "contentType": "application/json",
+                          "body": "ewogICJ0ZXN0TmFtZSI6ICJQZXJmb3JtYW5jZVRlc3Q6IEFsbGUgU3BhbHRlbiBBbnNpY2h0IiwKICAiYnJvd3NlciI6ICJNaWNyb3NvZnQgRWRnZSIsCiAgInZpdGFscyI6IHsKICAgICJmY3AiOiAwLAogICAgImxjcCI6IDI2MjgsCiAgICAiY2xzIjogMAogIH0sCiAgInJlc291cmNlcyI6IHsKICAgICJjb3VudCI6IDE0MiwKICAgICJ0b3RhbEJ5dGVzIjogNDczODYwNAogIH0sCiAgIm5hdmlnYXRpb24iOiB7CiAgICAidHRmYiI6IDk4Mi43MDAwMDAwNDc2ODM3LAogICAgImRvbUNvbnRlbnRMb2FkZWQiOiAyNjg5LjcwMDAwMDA0NzY4MzcsCiAgICAibG9hZEV2ZW50IjogNDA1Ny45MDAwMDAwOTUzNjc0CiAgfQp9"
+                        },
+                        {
+                          "name": "har",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\MartenKirschenhofer\\Projekte\\PlaywrightSoC_optimized\\server\\src\\tests\\test-results\\latency-suite.Optimized-hi-86330-ceTest-Alle-Spalten-Ansicht-Microsoft-Edge\\attachments\\har-e1db417f9c1909ab7e23aedb9d264989ade73a09.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d985a3478a99edb9efb3-378b2924e9671b51c44b",
+              "file": "latency-suite.Optimized.spec.ts",
+              "line": 152,
+              "column": 3
+            },
+            {
+              "title": "PerformanceTest: Sachverhalt Ansicht",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 12517,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-29T07:09:28.590Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "selector_latency_ms",
+                          "contentType": "text/plain",
+                          "path": "C:\\Users\\MartenKirschenhofer\\Projekte\\PlaywrightSoC_optimized\\server\\src\\tests\\test-results\\latency-suite.Optimized-hi-3c045-nceTest-Sachverhalt-Ansicht-Google-Chrome\\attachments\\selector-latency-ms-c516837c70532b5b530b8f8552bb410681e15209.txt"
+                        },
+                        {
+                          "name": "playwright_perf_metrics",
+                          "contentType": "application/json",
+                          "body": "ewogICJ0ZXN0TmFtZSI6ICJQZXJmb3JtYW5jZVRlc3Q6IFNhY2h2ZXJoYWx0IEFuc2ljaHQiLAogICJicm93c2VyIjogIkdvb2dsZSBDaHJvbWUiLAogICJ2aXRhbHMiOiB7CiAgICAiZmNwIjogMCwKICAgICJsY3AiOiAzMDIwLAogICAgImNscyI6IDAKICB9LAogICJyZXNvdXJjZXMiOiB7CiAgICAiY291bnQiOiAxNDIsCiAgICAidG90YWxCeXRlcyI6IDQ2MDAwNTEKICB9LAogICJuYXZpZ2F0aW9uIjogewogICAgInR0ZmIiOiAxMDQ2LjM5OTk5OTk3NjE1ODEsCiAgICAiZG9tQ29udGVudExvYWRlZCI6IDMxMDkuODAwMDAwMDcxNTI1NiwKICAgICJsb2FkRXZlbnQiOiA0MjMyLjgwMDAwMDA3MTUyNgogIH0KfQ=="
+                        },
+                        {
+                          "name": "har",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\MartenKirschenhofer\\Projekte\\PlaywrightSoC_optimized\\server\\src\\tests\\test-results\\latency-suite.Optimized-hi-3c045-nceTest-Sachverhalt-Ansicht-Google-Chrome\\attachments\\har-f624cc568b255d03c31110c7eacc16a794bb046a.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Microsoft Edge",
+                  "projectName": "Microsoft Edge",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 10305,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-29T07:10:59.677Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "selector_latency_ms",
+                          "contentType": "text/plain",
+                          "path": "C:\\Users\\MartenKirschenhofer\\Projekte\\PlaywrightSoC_optimized\\server\\src\\tests\\test-results\\latency-suite.Optimized-hi-3c045-nceTest-Sachverhalt-Ansicht-Microsoft-Edge\\attachments\\selector-latency-ms-7f4f3da01537b9646cf33b9941ace87557a6abd4.txt"
+                        },
+                        {
+                          "name": "playwright_perf_metrics",
+                          "contentType": "application/json",
+                          "body": "ewogICJ0ZXN0TmFtZSI6ICJQZXJmb3JtYW5jZVRlc3Q6IFNhY2h2ZXJoYWx0IEFuc2ljaHQiLAogICJicm93c2VyIjogIk1pY3Jvc29mdCBFZGdlIiwKICAidml0YWxzIjogewogICAgImZjcCI6IDAsCiAgICAibGNwIjogMjk0OCwKICAgICJjbHMiOiAwCiAgfSwKICAicmVzb3VyY2VzIjogewogICAgImNvdW50IjogMTQyLAogICAgInRvdGFsQnl0ZXMiOiA0NjAwMTA5CiAgfSwKICAibmF2aWdhdGlvbiI6IHsKICAgICJ0dGZiIjogNTY0LjI5OTk5OTk1MjMxNjMsCiAgICAiZG9tQ29udGVudExvYWRlZCI6IDMxMjIuMzAwMDAwMDcxNTI1NiwKICAgICJsb2FkRXZlbnQiOiA0MTUwLjEwMDAwMDAyMzg0MgogIH0KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d985a3478a99edb9efb3-b82b026cb1bb9cd3fafc",
+              "file": "latency-suite.Optimized.spec.ts",
+              "line": 187,
+              "column": 3
+            },
+            {
+              "title": "PerformanceTest: Telefonie Ansicht",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7849,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-29T07:09:41.129Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "selector_latency_ms",
+                          "contentType": "text/plain",
+                          "path": "C:\\Users\\MartenKirschenhofer\\Projekte\\PlaywrightSoC_optimized\\server\\src\\tests\\test-results\\latency-suite.Optimized-hi-99bee-manceTest-Telefonie-Ansicht-Google-Chrome\\attachments\\selector-latency-ms-04fd35e2656fc5f3c0814e1b131f11a48e18f567.txt"
+                        },
+                        {
+                          "name": "playwright_perf_metrics",
+                          "contentType": "application/json",
+                          "body": "ewogICJ0ZXN0TmFtZSI6ICJQZXJmb3JtYW5jZVRlc3Q6IFRlbGVmb25pZSBBbnNpY2h0IiwKICAiYnJvd3NlciI6ICJHb29nbGUgQ2hyb21lIiwKICAidml0YWxzIjogewogICAgImZjcCI6IDAsCiAgICAibGNwIjogMjUyOCwKICAgICJjbHMiOiAwCiAgfSwKICAicmVzb3VyY2VzIjogewogICAgImNvdW50IjogMTQyLAogICAgInRvdGFsQnl0ZXMiOiA0NDk1ODQ0CiAgfSwKICAibmF2aWdhdGlvbiI6IHsKICAgICJ0dGZiIjogNjIzLAogICAgImRvbUNvbnRlbnRMb2FkZWQiOiAyNTgxLjcwMDAwMDA0NzY4MzcsCiAgICAibG9hZEV2ZW50IjogMzY2MS4yMDAwMDAwNDc2ODM3CiAgfQp9"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Microsoft Edge",
+                  "projectName": "Microsoft Edge",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7808,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-29T07:11:09.999Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "selector_latency_ms",
+                          "contentType": "text/plain",
+                          "path": "C:\\Users\\MartenKirschenhofer\\Projekte\\PlaywrightSoC_optimized\\server\\src\\tests\\test-results\\latency-suite.Optimized-hi-99bee-manceTest-Telefonie-Ansicht-Microsoft-Edge\\attachments\\selector-latency-ms-4370e8d73fb0037fadd0e6519be954bd9d06b3a4.txt"
+                        },
+                        {
+                          "name": "playwright_perf_metrics",
+                          "contentType": "application/json",
+                          "body": "ewogICJ0ZXN0TmFtZSI6ICJQZXJmb3JtYW5jZVRlc3Q6IFRlbGVmb25pZSBBbnNpY2h0IiwKICAiYnJvd3NlciI6ICJNaWNyb3NvZnQgRWRnZSIsCiAgInZpdGFscyI6IHsKICAgICJmY3AiOiAwLAogICAgImxjcCI6IDI0NTYsCiAgICAiY2xzIjogMAogIH0sCiAgInJlc291cmNlcyI6IHsKICAgICJjb3VudCI6IDE0MiwKICAgICJ0b3RhbEJ5dGVzIjogNDQ5NTc0NQogIH0sCiAgIm5hdmlnYXRpb24iOiB7CiAgICAidHRmYiI6IDczMC4yMDAwMDAwNDc2ODM3LAogICAgImRvbUNvbnRlbnRMb2FkZWQiOiAyNTExLjcwMDAwMDA0NzY4MzcsCiAgICAibG9hZEV2ZW50IjogMzU1NS43OTk5OTk5NTIzMTYzCiAgfQp9"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d985a3478a99edb9efb3-674ccbccf23beb0cd30d",
+              "file": "latency-suite.Optimized.spec.ts",
+              "line": 220,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-05-29T07:08:06.539Z",
+    "duration": 191694.62600000002,
+    "expected": 12,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
