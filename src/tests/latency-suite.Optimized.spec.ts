@@ -7,6 +7,7 @@
  *       playwright_latency_ms    (wall-clock end-to-end)
  *   - Plus one playwright_perf_metrics JSON with vitals + resources.
  *   - HAR is attached only on failure or when a budget is exceeded.
+ * 
  */
 import { test, expect, reportLatency } from '../helpers/fixtures';
 import { TIMEOUTS } from './timeouts';
