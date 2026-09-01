@@ -58,3 +58,28 @@ dist-ssr/
 # package-lock.json
 # yarn.lock
 # pnpm-lock.yaml
+
+# Playwright & Test-spezifisch
+src/tests/test-results/
+test-results/
+.playwright/
+**/playwright-report*/
+
+# Reports & Metriken (generierte Daten)
+reports/detailed\ reports/
+reports/*.json
+reports/*.csv
+*metrics.txt
+prometheus-metrics.prom
+
+# Konfigurationsdateien mit sensiblen Daten
+src/config/server.env
+config/server.env
+
+# Docker & lokale Umgebung
+.dockerignore
+docker-compose.override.yml
+
+# Grafana/Prometheus Daten
+grafana/storage/
+prometheus_data/
