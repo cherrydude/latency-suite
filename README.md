@@ -5,6 +5,7 @@ Ein umfassendes Playwright-basiertes Test- und Performance-Monitoring-System mit
 ## 📋 Übersicht
 
 Dieses Projekt führt automatisierte Browser-Tests durch und erfasst Performance-Metriken in Echtzeit:
+
 - **Latenz-Messungen**: Detaillierte Response-Zeit-Analysen
 - **Prometheus-Integration**: Metriken-Collection und -Export
 - **Grafana-Dashboards**: Visualisierung der Performance-Daten
@@ -14,6 +15,7 @@ Dieses Projekt führt automatisierte Browser-Tests durch und erfasst Performance
 ## 🚀 Quick Start
 
 ### Voraussetzungen
+
 - Node.js >= 18
 - Docker (optional, für Grafana/Prometheus)
 - PowerShell (für Windows-Skripte)
@@ -118,16 +120,19 @@ PROMETHEUS_PUSHGATEWAY=http://localhost:9091
 ## 🧪 Tests ausführen
 
 ### Alle Tests
+
 ```bash
 npm run test
 ```
 
 ### Spezifische Test-Suite
+
 ```bash
 npx playwright test latency-suite.Optimized.spec.ts
 ```
 
 ### Mit Report
+
 ```bash
 npx playwright test --reporter=html
 ```
@@ -142,6 +147,7 @@ docker-compose up -d
 ```
 
 Dann im Browser:
+
 - **Grafana**: http://localhost:3000
 - **Prometheus**: http://localhost:9090
 
@@ -169,11 +175,13 @@ Reports werden in `reports/` gespeichert (JSON + CSV).
 ## 🐳 Docker
 
 ### Image bauen
+
 ```bash
 docker build -t playwright-server:latest .
 ```
 
 ### Container ausführen
+
 ```bash
 docker run -it --rm \
   -e TARGET_URL=https://example.com \
@@ -185,13 +193,13 @@ docker run -it --rm \
 
 ## 📝 Skripte
 
-| Skript | Zweck |
-|--------|-------|
-| `npm run test` | Tests ausführen |
-| `npm run start` | Server starten |
-| `npm run report` | Detaillierte Reports generieren |
-| `npm run avg:latency` | Durchschnittliche Latenz berechnen |
-| `./run-tests.sh` | Tests mit Bash ausführen |
+| Skript                | Zweck                               |
+| --------------------- | ----------------------------------- |
+| `npm run test`        | Tests ausführen                     |
+| `npm run start`       | Server starten                      |
+| `npm run report`      | Detaillierte Reports generieren     |
+| `npm run avg:latency` | Durchschnittliche Latenz berechnen  |
+| `./run-tests.sh`      | Tests mit Bash ausführen            |
 | `homeoffice-loop.ps1` | Endlosschleife für Homeoffice-Tests |
 
 ## 🔒 Sicherheit
@@ -203,16 +211,19 @@ docker run -it --rm \
 ## 🛠️ Entwicklung
 
 ### Dependencies aktualisieren
+
 ```bash
 npm update
 ```
 
 ### TypeScript kompilieren
+
 ```bash
 npx tsc
 ```
 
 ### Linting (falls konfiguriert)
+
 ```bash
 npm run lint
 ```
